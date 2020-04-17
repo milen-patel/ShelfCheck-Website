@@ -1,0 +1,12 @@
+.general {
+	background-color: #cfe2f3ff;
+   	text-align: center;
+	margin: 0;
+	height: 1000px;
+}
+
+.Logo {
+	border-radius: 50%;
+	padding-top: 25px;
+	width: 50%;
+}

@@ -1,0 +1,8 @@
+.primary {
+	width: 40%;
+	background-color: orange;
+	outline-style: double;
+   	text-align: center;
+   	display:flex;
+   	flex-direction:column;
+}
