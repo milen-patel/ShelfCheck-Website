@@ -1,0 +1,21 @@
+.NavPrimary {
+	background-color: #3d85c6ff; /* Set darker blue background */
+	padding-top: 10px; /* Add vertical padding so text isnt pushing against top of view */
+	/* Use Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 15px;
+	height: 5%; /* Percentage of the website view that should be for the nav bar */ 
+	width: 100%;
+	position: fixed; /* Force the navbar to be at the top of the view */
+}
+
+.buttonChoice {
+	color: white;
+	font-size: x-large;
+	font-family: Roboto, Arial;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right:10px;
+}
