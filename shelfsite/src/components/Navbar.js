@@ -10,10 +10,10 @@ class NavBar extends Component {
 	render() {
 		return (
 			<div className="NavPrimary">
-				<div className="buttonChoice"> <p> About </p>		</div>
-				<div className="buttonChoice"> <p> FAQ </p>			</div>
-				<div className="buttonChoice"> <p> Contact Us </p>	</div>
-				<div className="buttonChoice"> <p> Contribute </p>	</div>
+				<div className="buttonChoice"> <button type="button" className="buttonFormat"> About </button> </div>
+				<div className="buttonChoice"> <button type="button" className="buttonFormat"> FAQ 	</button>		</div>
+				<div className="buttonChoice"> <button type="button" className="buttonFormat"> Contact Us </button>	</div>
+				<div className="buttonChoice"> <button type="button" className="buttonFormat"> Contribute </button>	</div>
 			</div>
 		)
 	}

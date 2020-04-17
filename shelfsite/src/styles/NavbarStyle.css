@@ -12,10 +12,23 @@
 }
 
 .buttonChoice {
+	/* Add padding between each of the button choices */
+	padding-left: 10px;
+	padding-right:10px;
+}
+
+.buttonFormat {
 	color: white;
 	font-size: x-large;
 	font-family: Roboto, Arial;
 	font-weight: bold;
-	padding-left: 10px;
-	padding-right:10px;
+	background: none!important;
+	border: none;
+	padding: 0!important;
+	cursor: pointer;
+}
+
+.buttonFormat:hover {
+	/* Make the option bigger when mouse over */
+	font-size: xx-large;
 }
