@@ -2,11 +2,14 @@ import React, {Component} from 'react';
 import StoreComponent from "./StoreComponents";
 
 class StoreSearcherComponent extends Component {
-	constructor() {
+	constructor(props) {
 		super();
 		this.state = {
 			todos: [],
 			isLoading: false,
+			queryItem: props.itemName,
+			queryLat: props.lat,
+			queryLon: props.lon
 		}
 		this.convertRawToElement = this.convertRawToElement.bind(this);
 	}
@@ -33,7 +36,7 @@ class StoreSearcherComponent extends Component {
 				'Access-Control-Allow-Methods': 'POST',
 				'Access-Control-Allow-Credential': 'true'
 			}),
-		 body: '{ "longitude": -78.77, "latitude": 35.82, "item_name": "Bread" }' 
+		 body: '{ "longitude":' + this.state.queryLat + ', "latitude": ' + this.state.queryLon  + ', "item_name": "' + this.state.queryItem + '" }' 
 		})
 			.then(response => response.json())
 			.then(data => {
