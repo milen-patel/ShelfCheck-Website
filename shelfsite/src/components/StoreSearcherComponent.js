@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import StoreComponent from "./StoreComponents";
+import "../styles/StoreComponentStyle.css";
 
 class StoreSearcherComponent extends Component {
 	constructor(props) {
@@ -18,7 +19,7 @@ class StoreSearcherComponent extends Component {
 		if (this.state.isLoading) { return ( <div><p>loading...</p></div>); }
 		const parsedData = Array.from(this.state.todos).map(this.convertRawToElement)
 		return (
-			<div className="todoStyle">
+			<div className="StoreSearcher">
 				{parsedData}
 			</div>
 		)

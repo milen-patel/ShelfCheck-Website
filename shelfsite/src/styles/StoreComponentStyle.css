@@ -1,8 +1,18 @@
 .primary {
-	width: 40%;
-	background-color: orange;
-	outline-style: double;
+	background-color: #cbc0e6ff;
    	text-align: center;
    	display:flex;
    	flex-direction:column;
+	border-radius: 25px;
+	padding-top: 1%;
+}
+
+.StoreSearcher {
+	justify-content: center;
+	padding-left:25%;
+	padding-right:25%;
+}
+
+.storeDescriptorLabel {
+	font-weight:bold;
 }

@@ -4,12 +4,12 @@ import '../styles/StoreComponentStyle.css'
 function StoreComponent(props) {
 	return (
 		<div className='primary'>
-		<p> Store Name: {props.name}</p>
-		<p >Store Address: {props.addy}</p>
-		<p >Store Latitdue: {props.latitude}</p>
-		<p >Store Longitude: {props.longitude}</p>
-		<p >Store Quantity: {props.quantity}</p>
-		<p >Store Distance: {props.distance}</p>
+		<p><b> Store Name:</b> {props.name}</p>
+		<p><b>Store Address:</b> {props.addy}</p>
+		<p><b>Store Latitdue:</b> {props.latitude}</p>
+		<p><b>Store Longitude:</b> {props.longitude}</p>
+		<p><b>Store Quantity:</b> {props.quantity}</p>
+		<p><b>Store Distance:</b> {props.distance}</p>
 		</div>
 	)
 }
