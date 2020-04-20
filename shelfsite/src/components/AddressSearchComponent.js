@@ -1,11 +1,11 @@
 /* Documentation : https://www.npmjs.com/package/react-google-places-autocomplete#get-lat-lng */
-// <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrH-BOfL5wAB3BzhyMvdduEpBs-2KwaVs&libraries=places"></script>
-
+/* Api key maintained in public/index.html */
 
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import 'react-google-places-autocomplete/dist/index.min.css';
 import React, {Component} from 'react';
 import '../styles/FooterStyle.css'
+import { geocodeByAddress, getLatLng } from 'react-google-places-autocomplete';
 
 class AddressSearchComponent extends Component {
 	constructor(props) {
@@ -17,7 +17,13 @@ class AddressSearchComponent extends Component {
 		return (
 		  <div>
 			<GooglePlacesAutocomplete
-			  onSelect={console.log}
+				onSelect={({ description }) => (
+					geocodeByAddress(description)
+					.then(results => getLatLng(results[0]))
+					.then(({ lat, lng }) =>
+						console.log('Successfully got latitude and longitude', { lat, lng })
+					)
+				)}
 			/>
 		  </div>
 		)
