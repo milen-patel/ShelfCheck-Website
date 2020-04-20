@@ -15,10 +15,18 @@ class StoreSearcherComponent extends Component {
 		}
 		this.convertRawToElement = this.convertRawToElement.bind(this);
 		this.addressChangeRequested = this.addressChangeRequested.bind(this);
+		this.conductSearch = this.conductSearch.bind(this);
 	}
 
 	render() {
-		if (this.state.isLoading) { return ( <div><p>loading...</p></div>); }
+		if (this.state.isLoading) { 
+			return (
+				<div className="StoreSearcher">
+					<AddressSearchComponent onClick={this.addressChangeRequested}/>
+					<p>loading...</p>
+				</div>
+			);
+		}
 		const parsedData = Array.from(this.state.todos).map(this.convertRawToElement)
 		return (
 			<div className="StoreSearcher">
@@ -28,9 +36,8 @@ class StoreSearcherComponent extends Component {
 		)
 	}
 
-	componentDidMount() {
+	conductSearch() {
 		this.setState({isLoading:true})
-		console.log("test");
 		fetch('https://cors-anywhere.herokuapp.com/https://api.shelfcheck.io/dev/get-closest-stores-single-item', { 
 			method: 'POST', 
 			headers: new Headers({
@@ -59,7 +66,16 @@ class StoreSearcherComponent extends Component {
 	}
 
 	addressChangeRequested(lat, lon) {
-		console.log("Parent requetsed at" + lat + " " + lon );
+		console.log("New Request at" + lat + " " + lon );
+		this.setState(
+			{
+				todos: [],
+				isLoading: true,
+				queryLat: lat,
+				queryLon: lon,
+				queryItem: this.props.itemName
+			})
+		this.conductSearch();
 	}
 }
 
