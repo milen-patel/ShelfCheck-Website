@@ -21,7 +21,7 @@ class AddressSearchComponent extends Component {
 					geocodeByAddress(description)
 					.then(results => getLatLng(results[0]))
 					.then(({ lat, lng }) =>
-						console.log('Successfully got latitude and longitude', { lat, lng })
+						this.props.onClick(lat, lng)
 					)
 				)}
 			/>

@@ -14,6 +14,7 @@ class StoreSearcherComponent extends Component {
 			queryLon: props.lon
 		}
 		this.convertRawToElement = this.convertRawToElement.bind(this);
+		this.addressChangeRequested = this.addressChangeRequested.bind(this);
 	}
 
 	render() {
@@ -21,7 +22,7 @@ class StoreSearcherComponent extends Component {
 		const parsedData = Array.from(this.state.todos).map(this.convertRawToElement)
 		return (
 			<div className="StoreSearcher">
-				<AddressSearchComponent />
+				<AddressSearchComponent onClick={this.addressChangeRequested}/>
 				{parsedData}
 			</div>
 		)
@@ -55,6 +56,10 @@ class StoreSearcherComponent extends Component {
 		<StoreComponent name={currentItem.name} addy={currentItem.address} latitude={currentItem.coordinates[0]} longitude = {currentItem.coordinates[1]} quantity={currentItem.approximate_quantity} distance={currentItem.distance} />
 	)
 
+	}
+
+	addressChangeRequested(lat, lon) {
+		console.log("Parent requetsed at" + lat + " " + lon );
 	}
 }
 
