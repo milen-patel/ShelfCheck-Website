@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import StoreComponent from "./StoreComponents";
+import AddressSearchComponent from "./AddressSearchComponent";
 import "../styles/StoreComponentStyle.css";
 
 class StoreSearcherComponent extends Component {
@@ -20,6 +21,7 @@ class StoreSearcherComponent extends Component {
 		const parsedData = Array.from(this.state.todos).map(this.convertRawToElement)
 		return (
 			<div className="StoreSearcher">
+				<AddressSearchComponent />
 				{parsedData}
 			</div>
 		)
