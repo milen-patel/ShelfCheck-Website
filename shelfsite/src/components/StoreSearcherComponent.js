@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import StoreComponent from "./StoreComponents";
 import AddressSearchComponent from "./AddressSearchComponent";
+import ItemChooserComponent from "./ItemChooserComponent";
 import "../styles/StoreComponentStyle.css";
 
 class StoreSearcherComponent extends Component {
@@ -23,6 +24,7 @@ class StoreSearcherComponent extends Component {
 			return (
 				<div className="StoreSearcher">
 					<AddressSearchComponent onClick={this.addressChangeRequested}/>
+					<ItemChooserComponent />
 					<p>loading...</p>
 				</div>
 			);
@@ -31,6 +33,7 @@ class StoreSearcherComponent extends Component {
 		return (
 			<div className="StoreSearcher">
 				<AddressSearchComponent onClick={this.addressChangeRequested}/>
+				<ItemChooserComponent />
 				{parsedData}
 			</div>
 		)
