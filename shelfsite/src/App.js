@@ -11,7 +11,6 @@ class App extends Component {
 			<div className="general">
 				<NavBar />
 				<img src={Logo} alt="Logo" className="Logo"/>
-				<p> Results for Bread: </p>
 			    <StoreSearcherComponent itemName="Bread" lat="35.82" lon="-78.77"/>
 				<Footer />
 			</div>

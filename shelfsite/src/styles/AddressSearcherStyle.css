@@ -1,0 +1,47 @@
+.google-places-autocomplete {
+	width: 100%;
+	position: relative;
+	padding-bottom: 5px;
+}
+
+.google-places-autocomplete__input {
+	width: calc(100% - 20px);
+	padding: 10px;
+	border: none;
+	margin-bottom: 2px;
+	border-radius: 15px;
+	text-align: center;
+	box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .09)
+}
+
+.google-places-autocomplete__input:active,
+.google-places-autocomple te__input:focus,
+.google-places-autocomplete__input:hover {
+	outline: 0;
+	border: none;
+}
+
+.google-places-autocomplete__suggestions-container {
+	background: #fff;
+	border-radius: 0 0 5px 5px;
+	color: #000;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	border-radius: 15px;
+	box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .09)
+}
+
+.google-places-autocomplete__suggestion {
+	font-size: 1rem;
+	text-align: center;
+	padding: 10px
+}
+
+.google-places-autocomplete__suggestion:hover {
+	background-color: #d0e0e3ff; /* Set darker blue background */
+}
+
+.google-places-autocomplete__suggestion--active {
+	background-color: #d0e0e3ff; /* Set darker blue background */
+}
