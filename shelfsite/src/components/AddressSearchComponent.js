@@ -2,9 +2,10 @@
 /* Api key maintained in public/index.html */
 
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
-import 'react-google-places-autocomplete/dist/index.min.css';
 import React, {Component} from 'react';
 import '../styles/FooterStyle.css'
+import '../styles/AddressSearcherStyle.css'
+
 import { geocodeByAddress, getLatLng } from 'react-google-places-autocomplete';
 
 class AddressSearchComponent extends Component {
