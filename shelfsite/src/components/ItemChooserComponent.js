@@ -12,10 +12,9 @@ class ItemChooserComponent extends Component {
 			<div>
 			<form className="itemPicker">
 				<input type="radio" id="Bread" value="Bread" name="pickItem" />
-				<label for="Bread">Bread</label>
+				<label htmlFor="Bread">Bread</label>
 				<input type="radio" id="Water" value="Water" name="pickItem" />
-				<label for="Water">Water</label>
-
+				<label htmlFor="Water">Water</label>
 				<br />
 			</form>
 			</div>

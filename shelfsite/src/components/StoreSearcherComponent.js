@@ -29,6 +29,18 @@ class StoreSearcherComponent extends Component {
 				</div>
 			);
 		}
+
+
+		if (this.state.todos.includes("No stores nearby")) {
+			return (
+			<div className="StoreSearcher">
+				<AddressSearchComponent onClick={this.addressChangeRequested}/>
+				<ItemChooserComponent />
+				<p> No Results Found </p>	
+			</div>
+			)
+		}
+
 		const parsedData = Array.from(this.state.todos).map(this.convertRawToElement)
 		return (
 			<div className="StoreSearcher">

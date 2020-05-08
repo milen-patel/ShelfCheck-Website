@@ -10,4 +10,6 @@ Todo List:
 	Fix mobile formatting
 	Fix unique key warning
 	Comment code
-	Handle bad API Results checking
+	Handle bad API Results checking (In Progress May 7th)
+	Fully learn google maps api to avoid error and external key
+	Handle NavBar issues with extreme screen resizing
