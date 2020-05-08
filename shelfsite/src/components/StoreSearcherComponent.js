@@ -29,6 +29,7 @@ class StoreSearcherComponent extends Component {
 				</div>
 			);
 		}
+		console.log(this.state.todos);
 		const parsedData = Array.from(this.state.todos).map(this.convertRawToElement)
 		return (
 			<div className="StoreSearcher">
@@ -50,7 +51,7 @@ class StoreSearcherComponent extends Component {
 				'Access-Control-Allow-Methods': 'POST',
 				'Access-Control-Allow-Credential': 'true'
 			}),
-		 body: '{ "longitude":' + this.state.queryLat + ', "latitude": ' + this.state.queryLon  + ', "item_name": "' + this.state.queryItem + '" }' 
+		 body: '{ "longitude":' + this.state.queryLon + ', "latitude": ' + this.state.queryLat  + ', "item_name": "' + this.state.queryItem + '" }' 
 		})
 			.then(response => response.json())
 			.then(data => {
