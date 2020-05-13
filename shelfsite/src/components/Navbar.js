@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../styles/NavbarStyle.css'
+import CartArt from "../include/ShoppingCart.png"
 
 class NavBar extends Component {
 	constructor(props) {
@@ -10,14 +11,22 @@ class NavBar extends Component {
 	render() {
 		return (
 			<div className="NavPrimary">
-				<div className="buttonChoice"> <button type="button" className="buttonFormat"> About </button> </div>
-				<div className="buttonChoice"> <button type="button" className="buttonFormat"> FAQ 	</button>		</div>
-				<div className="buttonChoice"> <button type="button" className="buttonFormat"> Contact Us </button>	</div>
-				<div className="buttonChoice"> <button type="button" className="buttonFormat"> Contribute </button>	</div>
+
+				<div className="DivLogo">
+					<p> ShelfCheck </p>
+				</div>
+				
+				<div className="InfoText">
+					<h1 className="HeaderText"> Know What's In Store </h1>
+					<h2 className="SecondaryText"> Create A Shopping List to Get Started </h2>
+				</div>
+
+				<div className="ButtonDiv">
+					<button type="button" class="TryButton">Create a List</button>
+				</div>
+			<img src={CartArt} alt="CartArt" class="align-self"/>
 			</div>
 		)
 	}
-
 	}
-
 export default NavBar;
