@@ -4,12 +4,10 @@ import '../styles/StoreComponentStyle.css'
 function StoreComponent(props) {
 	return (
 		<div className='primary'>
-		<p><b> Store Name:</b> {props.name}</p>
-		<p><b>Store Address:</b> {props.addy}</p>
-		<p><b>Store Latitdue:</b> {props.latitude}</p>
-		<p><b>Store Longitude:</b> {props.longitude}</p>
-		<p><b>Store Quantity:</b> {props.quantity}</p>
-		<p><b>Store Distance:</b> {props.distance}</p>
+		<h1><u> {props.name}</u></h1>
+		<p>{props.addy}</p>
+		<p><b>Quantity:</b> {Math.round(props.quantity)}</p>
+		<p><b>Distance:</b> {Math.round((Number.EPSILON + props.distance) * 100)/100}</p>
 		</div>
 	)
 }

@@ -23,10 +23,10 @@ class NavBar extends Component {
 
 				<div className="ButtonDiv">
 				<Link to="/search">
-					<button type="button" class="TryButton">Create a List</button>
+					<button type="button" className="TryButton">Create a List</button>
 				</Link>
 				</div>
-			<img src={CartArt} alt="CartArt" class="align-self"/>
+			<img src={CartArt} alt="CartArt" className="align-self"/>
 			</div>
 		)
 	}

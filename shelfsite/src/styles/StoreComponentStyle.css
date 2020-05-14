@@ -1,10 +1,14 @@
 .primary {
-	background-color: #cbc0e6ff;
+	background-color: #7a9fd6;
    	text-align: center;
    	display:flex;
    	flex-direction:column;
 	border-radius: 25px;
 	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	color: #333333;
 }
 
 .StoreSearcher {
@@ -15,4 +19,27 @@
 
 .storeDescriptorLabel {
 	font-weight:bold;
+}
+
+
+.BackButton {
+  background-color: #0d3281;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  min-width:100px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.SearchPageHeader {
+}
+
+
+.Logo {
+	border-radius: 50%;
+	padding-top: 16px;
+	width: 90%;
 }

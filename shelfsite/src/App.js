@@ -16,8 +16,10 @@ class App extends Component {
 					</div>
 				} exact />
 				<Route path="/search" render={props =>
-					<div className="general">
-						<StoreSearcherComponent />
+					<div>
+						<div className="general">
+							<StoreSearcherComponent itemName="Bread"/>
+						</div>
 					</div>
 				} exact />
 			</div>
