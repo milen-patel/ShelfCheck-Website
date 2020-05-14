@@ -1,34 +1,60 @@
 .NavPrimary {
-	background-color: #3d85c6ff; /* Set darker blue background */
-	padding-top: 10px; /* Add vertical padding so text isnt pushing against top of view */
+	display: flex;
+	flex-direction: column;
+	background-color: #7a9fd6; /* Set darker blue background */
 	/* Use Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+	height: 600px; /* Percentage of the website view that should be for the nav bar */ 
+	width: 100%;
+	padding-top: 10px; /* So the text isn't pressed against the top of the screen */
+}
+
+.DivLogo {
+	padding-left: 20%;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	padding-top: 15px;
-	height: 5%; /* Percentage of the website view that should be for the nav bar */ 
-	width: 100%;
-	position: fixed; /* Force the navbar to be at the top of the view */
-}
-
-.buttonChoice {
-	/* Add padding between each of the button choices */
-	padding-left: 10px;
-	padding-right:10px;
-}
-
-.buttonFormat {
-	color: white;
-	font-size: x-large;
-	font-family: Roboto, Arial;
+	justify-content: flex-start;
+	font-family: "DM Sans";
+	font-size: 2.0em;
 	font-weight: bold;
-	background: none!important;
-	border: none;
-	padding: 0!important;
-	cursor: pointer;
+	color: #333333;
 }
 
-.buttonFormat:hover {
-	/* Make the option bigger when mouse over */
-	font-size: xx-large;
+img.align-self {
+	align-self: center;
+    width:15%; /* you can use % */
+    height: auto;
+	padding-right:8%;
+}
+
+.InfoText {
+	padding-top: 5%;
+	display: flex;
+	flex-direction: column;
+}
+
+.HeaderText {
+	font-size: 4.0em;
+	bottom: 0px;
+}
+
+.SecondaryText {
+	color: #333333;
+}
+
+.TryButton {
+  background-color: #0d3281;  
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  width: 15%;
+  min-width:300px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+.ButtonDiv {
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
