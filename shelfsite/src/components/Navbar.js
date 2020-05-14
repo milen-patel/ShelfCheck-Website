@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../styles/NavbarStyle.css'
 import CartArt from "../include/ShoppingCart.png"
-
+import {Link} from 'react-router-dom'
 class NavBar extends Component {
 	constructor(props) {
 		super();
@@ -22,7 +22,9 @@ class NavBar extends Component {
 				</div>
 
 				<div className="ButtonDiv">
+				<Link to="/search">
 					<button type="button" class="TryButton">Create a List</button>
+				</Link>
 				</div>
 			<img src={CartArt} alt="CartArt" class="align-self"/>
 			</div>

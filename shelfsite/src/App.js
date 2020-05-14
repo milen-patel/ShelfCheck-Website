@@ -2,22 +2,26 @@ import React, {Component} from 'react';
 import './styles/HomePageStyle.css'
 import NavBar from './components/Navbar.js'
 import HomePageContent from './components/HomePageContent.js'
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
+import {Route, Switch} from 'react-router-dom';
+import StoreSearcherComponent from './components/StoreSearcherComponent.js'
 class App extends Component {
 	render() {
 		return (
-			<switch>
+			<Switch>
 			<div className="general">
 				<Route path="/" render={props =>
-					<div>
+					<div className="general">
 						<NavBar />
 						<HomePageContent />
 					</div>
 				} exact />
-				<Route path="/test" component={NavBar, HomePageContent} />
+				<Route path="/search" render={props =>
+					<div className="general">
+						<StoreSearcherComponent />
+					</div>
+				} exact />
 			</div>
-			</switch>
+			</Switch>
 		)
 	}
 

@@ -39,6 +39,15 @@ class StoreSearcherComponent extends Component {
 			</div>
 			)
 		}
+		if (this.state.todos.length  === 0) {
+			return (
+			<div className="StoreSearcher">
+				<AddressSearchComponent onClick={this.addressChangeRequested}/>
+				<ItemChooserComponent />
+				<p> No Results Found </p>	
+			</div>
+			)
+		}
 		const parsedData = Array.from(this.state.todos).map(this.convertRawToElement)
 		return (
 			<div className="StoreSearcher">
@@ -60,7 +69,7 @@ class StoreSearcherComponent extends Component {
 				'Access-Control-Allow-Methods': 'POST',
 				'Access-Control-Allow-Credential': 'true'
 			}),
-		 body: '{ "longitude":' + this.state.queryLon + ', "latitude": ' + this.state.queryLat  + ', "item_name": "' + this.state.queryItem + '" }' 
+		 body: '{ "longitude":' + this.state.queryLon + ', "latitude": ' + this.state.queryLat  + ', "item_name": "' + "Bread"  + '" }' 
 		})
 			.then(response => response.json())
 			.then(data => {
