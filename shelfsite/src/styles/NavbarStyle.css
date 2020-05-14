@@ -3,7 +3,7 @@
 	flex-direction: column;
 	background-color: #7a9fd6; /* Set darker blue background */
 	/* Use Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-	height: 60%; /* Percentage of the website view that should be for the nav bar */ 
+	height: 600px; /* Percentage of the website view that should be for the nav bar */ 
 	width: 100%;
 	padding-top: 10px; /* So the text isn't pressed against the top of the screen */
 }
@@ -49,6 +49,7 @@ img.align-self {
   font-size: 26px;
   font-weight: 700;
   width: 15%;
+  min-width:300px;
   height: 60px;
   border-radius: 15px;
 }

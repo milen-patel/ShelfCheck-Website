@@ -1,3 +1,28 @@
 .main {
    	text-align: center;
+	padding-top: 10px;
+	padding-left: 20%;
+	padding-right: 20%;
+	font-family: "DM Sans";
+	font-size: 1.5em;
+}
+
+.team {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.HeadShotPic {
+	height: 150px;
+	border-radius: 25px;
+}
+
+.TeamListEntityName {
+	font-weight: bold;
+}
+
+.TeamListEntityRole {
+	font-size: 1px;
+	font-family: "DM Sans";
 }
