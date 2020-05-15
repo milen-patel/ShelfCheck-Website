@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
 import './styles/AppStyle.css'
-import NavBar from './components/Navbar.js'
-import HomePageContent from './components/HomePageContent.js'
+import HomePage from './components/HomePageComponent.js'
 import StoreSearcherComponent from './components/StoreSearcherComponent.js'
 
 class App extends Component {
@@ -12,8 +11,7 @@ class App extends Component {
 			<div className="general">
 				<Route path="/" render={props =>
 					<div className="general">
-						<NavBar />
-						<HomePageContent />
+						<HomePage />
 					</div>
 				} exact />
 				<Route path="/search" render={props =>

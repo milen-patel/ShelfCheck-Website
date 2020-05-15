@@ -1,40 +1,39 @@
 import React, {Component} from 'react';
-import "../styles/HomePageContentStyle.css";
+import "../styles/HomePageStyle.css";
+
+/* Include pictures for each team member */
 import GuzzoPic from "../include/AnthonyGuzzo.jpeg";
 import JamesPic from "../include/JamesTaylor.jpeg";
 import VirajPic from "../include/VirajShah.jpeg";
 import RJPic from "../include/RohitJain.jpeg";
 import MilenPic from "../include/MilenPatel.jpeg";
 
-class TeamPersonVisualizer extends Component {
-	constructor(props) {
-		super();
-		this.state = {}
-	}
-
-	render() {
+/* TeampersonVisualizer is responsible for creating each member on the Meet the Team List
+ * name: Name of the team member; must correspond to one of the names for which an image exists
+ * role: Description of the team member with formal position */
+function TeamPersonVisualizer(props) {
+		/* Determine from the name of the individual, which image should be used */
 		var imgfile;
 		
-		if (this.props.name === "Anthony Guzzo") {
+		if (props.name === "Anthony Guzzo") {
 			imgfile = GuzzoPic;
-		} else if (this.props.name === "James Taylor") {
+		} else if (props.name === "James Taylor") {
 			imgfile = JamesPic;
-		} else if (this.props.name === "Viraj Shah") {
+		} else if (props.name === "Viraj Shah") {
 			imgfile = VirajPic;
-		} else if (this.props.name === "Rohit Jain") {
+		} else if (props.name === "Rohit Jain") {
 			imgfile = RJPic;
-		} else if (this.props.name === "Milen Patel") {
+		} else if (props.name === "Milen Patel") {
 			imgfile = MilenPic;
 		}
 
 		return (
 			<div className="teamListEntity">
-				<img src={imgfile} alt={this.props.name} className="HeadShotPic" />
-				<p className="TeamListEntityName"> {this.props.name} </p>
-				<p className="TeamListEntityRole"> {this.props.role} </p>
-
+				<img src={imgfile} alt={props.name} className="HeadShotPic" />
+				<p className="TeamListEntityName"> {props.name} </p>
+				<p className="TeamListEntityRole"> {props.role} </p>
 			</div>
 		)
-	}
-	}
+
+}
 export default TeamPersonVisualizer;
