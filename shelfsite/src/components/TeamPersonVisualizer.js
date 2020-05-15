@@ -1,7 +1,5 @@
-import React, {Component} from 'react';
+import React from 'react';
 import "../styles/HomePageStyle.css";
-
-/* Include pictures for each team member */
 import GuzzoPic from "../include/AnthonyGuzzo.jpeg";
 import JamesPic from "../include/JamesTaylor.jpeg";
 import VirajPic from "../include/VirajShah.jpeg";
@@ -11,10 +9,10 @@ import MilenPic from "../include/MilenPatel.jpeg";
 /* TeampersonVisualizer is responsible for creating each member on the Meet the Team List
  * name: Name of the team member; must correspond to one of the names for which an image exists
  * role: Description of the team member with formal position */
+
 function TeamPersonVisualizer(props) {
-		/* Determine from the name of the individual, which image should be used */
 		var imgfile;
-		
+		/* Determine from the name of the individual, which image should be used */
 		if (props.name === "Anthony Guzzo") {
 			imgfile = GuzzoPic;
 		} else if (props.name === "James Taylor") {
@@ -34,6 +32,5 @@ function TeamPersonVisualizer(props) {
 				<p className="TeamListEntityRole"> {props.role} </p>
 			</div>
 		)
-
 }
 export default TeamPersonVisualizer;

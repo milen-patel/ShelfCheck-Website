@@ -1,9 +1,9 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
-import CartArt from "../include/ShoppingCart.png"
+import {Link} from 'react-router-dom';
+import CartArt from "../include/ShoppingCart.png";
+import '../styles/HomePageStyle.css';
+import TeamPersonVisualizer from './TeamPersonVisualizer.js';
 
-import '../styles/HomePageStyle.css'
-import TeamPersonVisualizer from './TeamPersonVisualizer.js'
 function HomePage() {
 		return (
 			<div>

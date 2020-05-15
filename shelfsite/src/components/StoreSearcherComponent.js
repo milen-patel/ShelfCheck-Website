@@ -4,6 +4,7 @@ import AddressSearchComponent from "./AddressSearchComponent";
 import "../styles/StoreComponentStyle.css";
 import Logo from "../include/shelfCheckLogoTransparent.png"
 import {Link} from 'react-router-dom';
+import keys from '../keys.js';
 
 class StoreSearcherComponent extends Component {
 	constructor(props) {
@@ -65,7 +66,7 @@ class StoreSearcherComponent extends Component {
 		fetch('https://cors-anywhere.herokuapp.com/https://api.shelfcheck.io/dev/get-closest-stores-single-item', { 
 			method: 'POST', 
 			headers: new Headers({
-				'x-api-key': 'H3T5GfHGhB6Ai1IZDYX708MvVsnpypnq5efMzdGl', 
+				'x-api-key': keys["single-item-search"], 
 				'Content-Type': 'application/json',
 				'Access-Control-Allow-Origin': 'http://localhost:3000',
 				'Access-Control-Allow-Methods': 'POST',
