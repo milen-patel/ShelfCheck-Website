@@ -11,24 +11,21 @@ class NavBar extends Component {
 	render() {
 		return (
 			<div className="NavPrimary">
-
 				<div className="DivLogo">
 					<p> ShelfCheck </p>
 				</div>
-				
 				<div className="InfoText">
 					<h1 className="HeaderText"> Know What's In Store </h1>
 					<h2 className="SecondaryText"> Create A Shopping List to Get Started </h2>
 				</div>
-
 				<div className="ButtonDiv">
 				<Link to="/search">
 					<button type="button" className="TryButton">Create a List</button>
 				</Link>
 				</div>
-			<img src={CartArt} alt="CartArt" className="align-self"/>
+				<img src={CartArt} alt="CartArt" className="align-self"/>
 			</div>
 		)
 	}
-	}
+}
 export default NavBar;

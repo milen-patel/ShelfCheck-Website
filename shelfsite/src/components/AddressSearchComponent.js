@@ -3,7 +3,6 @@
 
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import React, {Component} from 'react';
-import '../styles/FooterStyle.css'
 import '../styles/AddressSearcherStyle.css'
 
 import { geocodeByAddress, getLatLng } from 'react-google-places-autocomplete';

@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import './styles/HomePageStyle.css'
+import {Route, Switch} from 'react-router-dom';
+import './styles/AppStyle.css'
 import NavBar from './components/Navbar.js'
 import HomePageContent from './components/HomePageContent.js'
-import {Route, Switch} from 'react-router-dom';
 import StoreSearcherComponent from './components/StoreSearcherComponent.js'
+
 class App extends Component {
 	render() {
 		return (

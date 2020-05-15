@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import StoreComponent from "./StoreComponents";
 import AddressSearchComponent from "./AddressSearchComponent";
-import ItemChooserComponent from "./ItemChooserComponent";
 import "../styles/StoreComponentStyle.css";
 import Logo from "../include/shelfCheckLogoTransparent.png"
 import {Link} from 'react-router-dom';
@@ -25,44 +24,38 @@ class StoreSearcherComponent extends Component {
 		if (this.state.isLoading) { 
 			return (
 				<div className="StoreSearcher">
-				<img src={Logo} alt="Logo" className="Logo"/>
+					<img src={Logo} alt="Logo" className="Logo"/>
 					<AddressSearchComponent onClick={this.addressChangeRequested}/>
-					<ItemChooserComponent />
 					<p>Loading...</p>
-						<Link to="/">
-							<button type="button" className="BackButton">Back</button>
-						</Link>
+					<Link to="/">
+						<button type="button" className="BackButton">Back</button>
+					</Link>
 				</div>
 			);
 		}
 
-
 		if ((this.state.todos  === "none") || (this.state.todos.length  === 0) || (this.state.todos.includes("no stores nearby"))) {
 			return (
-			<div className="StoreSearcher">
-				<div className="SearchPageHeader">
+				<div className="StoreSearcher">
+					<img src={Logo} alt="Logo" className="Logo"/>
+					<AddressSearchComponent onClick={this.addressChangeRequested}/>
+					<p> No Results Found </p>	
+					<Link to="/">
+						<button type="button" className="BackButton">Back</button>
+					</Link>
 				</div>
-				<img src={Logo} alt="Logo" className="Logo"/>
-
-				<AddressSearchComponent onClick={this.addressChangeRequested}/>
-				<ItemChooserComponent />
-				<p> No Results Found </p>	
-						<Link to="/">
-							<button type="button" className="BackButton">Back</button>
-						</Link>
-			</div>
 			)
 		}
+
 		const parsedData = Array.from(this.state.todos).map(this.convertRawToElement)
 		return (
 			<div className="StoreSearcher">
 				<img src={Logo} alt="Logo" className="Logo"/>
 				<AddressSearchComponent onClick={this.addressChangeRequested}/>
-				<ItemChooserComponent />
 				{parsedData}
-						<Link to="/">
-							<button type="button" className="BackButton">Back</button>
-						</Link>
+				<Link to="/">
+					<button type="button" className="BackButton">Back</button>
+				</Link>
 			</div>
 		)
 	}
@@ -91,9 +84,16 @@ class StoreSearcherComponent extends Component {
 
  	convertRawToElement(currentItem) {
 	return (
-		<StoreComponent name={currentItem.name} key={currentItem.address}  addy={currentItem.address} latitude={currentItem.coordinates[0]} longitude = {currentItem.coordinates[1]} quantity={currentItem.approximate_quantity} distance={currentItem.distance} />
+		<StoreComponent 
+			name={currentItem.name}
+			key={currentItem.address}  
+			addy={currentItem.address} 
+			latitude={currentItem.coordinates[0]} 
+			longitude = {currentItem.coordinates[1]} 
+			quantity={currentItem.approximate_quantity} 
+			distance={currentItem.distance} 
+		/>
 	)
-
 	}
 
 	addressChangeRequested(lat, lon) {
