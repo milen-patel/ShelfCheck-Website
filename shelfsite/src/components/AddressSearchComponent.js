@@ -5,6 +5,12 @@ import '../styles/AddressSearcherStyle.css';
 import { geocodeByAddress, getLatLng } from 'react-google-places-autocomplete';
 import keys from '../keys.js';
 
+/* AddressSearchComponent is responsible for creating a search bar that
+ * autocompletes addresses using Google's autocomplete api. onClick is
+ * the sole prop and refers to the function that this component will call
+ * when the user selects a new address. The onClick parameter should refer
+ * to a function which recieves solely latitude and longitude as input
+ */
 function AddressSearchComponent(props) {
 		return (
 		  <div>

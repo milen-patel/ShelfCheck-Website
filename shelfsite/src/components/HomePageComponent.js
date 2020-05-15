@@ -4,6 +4,7 @@ import CartArt from "../include/ShoppingCart.png";
 import '../styles/HomePageStyle.css';
 import TeamPersonVisualizer from './TeamPersonVisualizer.js';
 
+/* Responsible for rendering the view of the homepage */
 function HomePage() {
 		return (
 			<div>

@@ -24,3 +24,6 @@ yarn-error.log*
 
 # hide api-keys
 /src/keys.js
+
+# hide self-notes
+/src/include/personalTODOS.txt

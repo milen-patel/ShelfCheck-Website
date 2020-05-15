@@ -8,8 +8,8 @@ import MilenPic from "../include/MilenPatel.jpeg";
 
 /* TeampersonVisualizer is responsible for creating each member on the Meet the Team List
  * name: Name of the team member; must correspond to one of the names for which an image exists
- * role: Description of the team member with formal position */
-
+ * role: Description of the team member with formal position
+ */
 function TeamPersonVisualizer(props) {
 		var imgfile;
 		/* Determine from the name of the individual, which image should be used */

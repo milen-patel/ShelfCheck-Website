@@ -1,6 +1,16 @@
 import React from "react";
 import '../styles/StoreComponentStyle.css';
 
+/* Represents and individual store item. Used for visualizing search
+ * results for each user serach. The following parameters are recieved
+ * props.name -> Name of the store
+ * proprs.addy -> Address of the store
+ * props.quantity -> Estimated Quantity of Item in Store 
+ * props.distance -> Distance from store to user 
+ *
+ * StoreComponent will round estimated quantity to the nearest integer
+ * StoreComponent will round distance to exactly two decimal places
+ */
 function StoreComponent(props) {
 	return (
 		<div className='primary'>
