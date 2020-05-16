@@ -27,7 +27,10 @@
 	flex-direction: row;
 	justify-content: flex-end;
 	/* Fade in nav bar https://blog.hubspot.com/website/css-fade-in */
-	animation: fadeInAnimation ease 8s;
+	/* Delayed appereance */
+	opacity:0;
+	animation: fadeInAnimation ease 3s;
+	animation-delay: 1.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -115,7 +118,7 @@
 .companyExplanation {
 	padding-left: 20%;
 	padding-right: 20%;
-	animation: fadeInAnimation ease 3s;
+	animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -143,21 +146,21 @@
 	font-size: 2.0em;
 	bottom: 0px;
 	color: white;
-	animation: fadeInAnimation ease 6s;
+	animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
 .SubHeaderText {
 	color: white;
-	animation: fadeInAnimation ease 6s;
+	animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 .SecondaryText {
 	font-size: 1.0em;
 	color: #333333;
-	animation: fadeInAnimation ease 6s;
+	animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
