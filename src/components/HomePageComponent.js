@@ -4,19 +4,29 @@ import CartArt from "../include/ShoppingCart.png";
 import WhiteLogo from "../include/shelfCheckWhiteLogo.png";
 import '../styles/HomePageStyle.css';
 import TeamPersonVisualizer from './TeamPersonVisualizer.js';
-
+import { BrowserView, MobileView } from "react-device-detect"; /* https://www.npmjs.com/package/react-device-detect */
 /* Responsible for rendering the view of the homepage */
 function HomePage() {
 		return (
 			<div className="main">
-				<div className="NavBar">
-					<div className="t1">
-						<img src={WhiteLogo} alt="WhiteLogo" className="WhiteLogo"/>
+				<BrowserView>
+					<div className="NavBar">
+						<div className="t1">
+							<img src={WhiteLogo} alt="WhiteLogo" className="WhiteLogo"/>
+						</div>
+						<div className="t0">
+							<Link to="/contact">
+								<button type="button" className="ContactButton"> Contact Us</button>
+							</Link>
+						</div>
 					</div>
-					<div className="t0">
-						<button type="button" className="ContactButton"> Contact Us</button>
+				</BrowserView>
+				<MobileView>
+					<div className="MobileNavBar">
+							<img src={WhiteLogo} alt="WhiteLogo" className="WhiteLogo"/>
+							<hr width="40%"/>
 					</div>
-				</div>
+				</MobileView>
 				<div className="InfoText">
 					<h1 className="HeaderText"> Know What's In Store </h1>
 					<h2 className="SecondaryText"> Create A Shopping List to Get Started </h2>
@@ -37,6 +47,22 @@ function HomePage() {
 					<TeamPersonVisualizer name = "James Taylor" role = "Co-CTO, Head of App Platform Development"/>
 					<TeamPersonVisualizer name = "Milen Patel" role = "Co-CTO, Head of Web Platform Development"/>
 				</div>
+				<BrowserView>
+					<div className="footer">
+						<a href="policy.html" className="policytext">Privacy Policy</a>
+						<a href="terms.html" className="policytext">Terms and Conditions</a>
+					</div>
+				</BrowserView>
+				<MobileView>
+					<hr width="40%" color="#333333" />
+					<Link to="/contact">
+						<button type="button" className="MobileContactButton"> Contact Us</button>
+					</Link>
+					<div className="mobilefooter">
+						<a href="policy.html" className="policytext">Privacy Policy</a>
+						<a href="terms.html" className="policytext">Terms and Conditions</a>
+					</div>
+				</MobileView>
 			</div>
 		)
 }

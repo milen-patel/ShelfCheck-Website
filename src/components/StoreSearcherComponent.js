@@ -82,7 +82,6 @@ class StoreSearcherComponent extends Component {
 				})
 			});
 	}
-
  	convertRawToElement(currentItem) {
 	return (
 		<StoreComponent 
