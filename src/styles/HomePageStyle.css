@@ -5,6 +5,9 @@
 	font-size: 1.5em;
 	background-image: linear-gradient(#33b2db, #9094fa);
 	background-attachment: fixed;
+	animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .NavPrimary {
@@ -23,6 +26,10 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
+	/* Fade in nav bar https://blog.hubspot.com/website/css-fade-in */
+	animation: fadeInAnimation ease 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .MobileNavBar {
@@ -108,6 +115,9 @@
 .companyExplanation {
 	padding-left: 20%;
 	padding-right: 20%;
+	animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 
@@ -133,27 +143,42 @@
 	font-size: 2.0em;
 	bottom: 0px;
 	color: white;
+	animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .SubHeaderText {
 	color: white;
+	animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 .SecondaryText {
 	font-size: 1.0em;
 	color: #333333;
+	animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .TryButton {
-  background-color: #4524ac;  
-  border: none;
-  color: white;
-  text-align: center;
-  font-size: 26px;
-  font-weight: 700;
-  width: 15%;
-  min-width:300px;
-  height: 60px;
-  border-radius: 15px;
+	background-color: #4524ac;  
+  	border: none;
+  	color: white;
+  	text-align: center;
+  	font-size: 26px;
+  	font-weight: 700;
+  	width: 15%;
+  	min-width:300px;
+  	height: 60px;
+  	border-radius: 15px;
+	/* Delayed appereance */
+	opacity:0;
+	animation: fadeInAnimation ease 3s;
+	animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .ButtonDiv {
@@ -192,3 +217,12 @@
 	color: #333333;
 	text-decoration: none;
 }
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
