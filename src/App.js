@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
 import HomePage from './components/HomePageComponent.js';
 import StoreSearcherComponent from './components/StoreSearcherComponent.js';
-import PrivacyPolicy from './components/PrivacyPolicyRender.js';
 import './styles/AppStyle.css';
 
 class App extends Component {
@@ -26,13 +25,6 @@ class App extends Component {
 					<div>
 						<div className="general">
 							<p> Coming </p>
-						</div>
-					</div>
-				} />
-				<Route path="/privacy-policy" render={props =>
-					<div>
-						<div className="general">
-							<PrivacyPolicy />
 						</div>
 					</div>
 				} />

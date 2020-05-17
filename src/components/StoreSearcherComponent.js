@@ -5,6 +5,7 @@ import "../styles/StoreComponentStyle.css";
 import Logo from "../include/shelfCheckLogoTransparent.png"
 import {Link} from 'react-router-dom';
 import keys from '../keys.js';
+import ItemChooser from './ItemChooser.js';
 
 class StoreSearcherComponent extends Component {
 	constructor(props) {
@@ -39,6 +40,7 @@ class StoreSearcherComponent extends Component {
 			return (
 				<div className="StoreSearcher">
 					<img src={Logo} alt="Logo" className="Logo"/>
+					<ItemChooser />
 					<AddressSearchComponent onClick={this.addressChangeRequested}/>
 					<p> No Results Found </p>	
 					<Link to="/">
