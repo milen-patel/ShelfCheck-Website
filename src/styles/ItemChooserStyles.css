@@ -1,0 +1,33 @@
+.categoryForm {
+	border-radius: 10px     10px      0           0;
+    box-shadow: 0 0 0pt 1pt #333333;
+	background-color: #68ADEB;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top:10px;
+	padding-bottom:10px;
+	flex-wrap: wrap;
+
+}
+.categoryForm label 
+{
+  padding-right:4px;
+  padding-left:4px;
+}
+
+.itemListForm {
+	border-radius: 0 0 10px     10px;
+    box-shadow: 0 0 0pt 1pt #333333;
+	margin-bottom:10px;
+	padding-left:25%;
+	padding-right:25%;
+	background-color: #D8F4F6;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	min-height:50px;
+	align-items:baseline;
+}
+.test {
+}

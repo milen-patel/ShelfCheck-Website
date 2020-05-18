@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import StoreComponent from "./StoreComponents";
 import AddressSearchComponent from "./AddressSearchComponent";
 import "../styles/StoreComponentStyle.css";
-import Logo from "../include/shelfCheckLogoTransparent.png"
+import Logo from "../include/shelfCheckWhiteLogo.png"
 import {Link} from 'react-router-dom';
 import keys from '../keys.js';
 import ItemChooser from './ItemChooser.js';
@@ -15,18 +15,21 @@ class StoreSearcherComponent extends Component {
 			isLoading: false,
 			queryItem: props.itemName,
 			queryLat: props.lat,
-			queryLon: props.lon
+			queryLon: props.lon,
 		}
 		this.convertRawToElement = this.convertRawToElement.bind(this);
 		this.addressChangeRequested = this.addressChangeRequested.bind(this);
 		this.conductSearch = this.conductSearch.bind(this);
+		this.itemListChangeRequested = this.itemListChangeRequested.bind(this);
 	}
 
 	render() {
+
 		if (this.state.isLoading) { 
 			return (
 				<div className="StoreSearcher">
 					<img src={Logo} alt="Logo" className="Logo"/>
+					<ItemChooser notifyFunction={this.itemListChangeRequested}/>
 					<AddressSearchComponent onClick={this.addressChangeRequested}/>
 					<p>Loading...</p>
 					<Link to="/">
@@ -40,8 +43,8 @@ class StoreSearcherComponent extends Component {
 			return (
 				<div className="StoreSearcher">
 					<img src={Logo} alt="Logo" className="Logo"/>
-					<ItemChooser />
-					<AddressSearchComponent onClick={this.addressChangeRequested}/>
+					<ItemChooser notifyFunction={this.itemListChangeRequested}/>
+					<AddressSearchComponent onClick={this.addressChangeRequested} />
 					<p> No Results Found </p>	
 					<Link to="/">
 						<button type="button" className="BackButton">Back</button>
@@ -54,6 +57,7 @@ class StoreSearcherComponent extends Component {
 		return (
 			<div className="StoreSearcher">
 				<img src={Logo} alt="Logo" className="Logo"/>
+					<ItemChooser notifyFunction={this.itemListChangeRequested}/>
 				<AddressSearchComponent onClick={this.addressChangeRequested}/>
 				{parsedData}
 				<Link to="/">
@@ -105,9 +109,13 @@ class StoreSearcherComponent extends Component {
 				isLoading: true,
 				queryLat: lat,
 				queryLon: lon,
-				queryItem: this.props.itemName
+				queryItem: this.props.itemName,
 			})
 		this.conductSearch();
+	}
+
+	itemListChangeRequested(items) {
+		console.log(items);
 	}
 }
 

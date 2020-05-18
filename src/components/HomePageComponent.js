@@ -5,7 +5,11 @@ import WhiteLogo from "../include/shelfCheckWhiteLogo.png";
 import '../styles/HomePageStyle.css';
 import TeamPersonVisualizer from './TeamPersonVisualizer.js';
 import { BrowserView, MobileView } from "react-device-detect"; /* https://www.npmjs.com/package/react-device-detect */
-/* Responsible for rendering the view of the homepage */
+
+/* Responsible for rendering the view of the homepage
+ * uses react-device-detect to provide a more compact 
+ * layout for mobile devices
+ */
 function HomePage() {
 		return (
 			<div className="main">
