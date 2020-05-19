@@ -56,8 +56,8 @@ function HomePage() {
 				</div>
 				<BrowserView>
 					<div className="footer">
-						<a href="policy.html" className="policytext">Privacy Policy</a>
-						<a href="terms.html" className="policytext">Terms and Conditions</a>
+						<a href="/privacy" className="policytext">Privacy Policy</a>
+						<a href="/terms" className="policytext">Terms and Conditions</a>
 					</div>
 				</BrowserView>
 				<MobileView>
@@ -66,8 +66,8 @@ function HomePage() {
 						<button type="button" className="MobileContactButton"> Contact Us</button>
 					</Link>
 					<div className="mobilefooter">
-						<a href="policy.html" className="policytext">Privacy Policy</a>
-						<a href="terms.html" className="policytext">Terms and Conditions</a>
+						<a href="/privacy" className="policytext">Privacy Policy</a>
+						<a href="/terms" className="policytext">Terms and Conditions</a>
 					</div>
 				</MobileView>
 			</div>
