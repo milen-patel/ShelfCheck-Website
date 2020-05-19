@@ -69,12 +69,12 @@ class StoreSearcherComponent extends Component {
 
 	conductSearch() {
 		this.setState({isLoading:true})
-		fetch('https://cors-anywhere.herokuapp.com/https://api.shelfcheck.io/v1/get-closest-stores-single-item', { 
+		fetch('https://api.shelfcheck.io/v1/get-closest-stores-single-item', { 
 			method: 'POST', 
 			headers: new Headers({
 				'x-api-key': keys["single-item-search"], 
 				'Content-Type': 'application/json',
-				'Access-Control-Allow-Origin': 'http://localhost:3000',
+				'Access-Control-Allow-Origin': 'https://www.shelfcheck.io',
 				'Access-Control-Allow-Methods': 'POST',
 				'Access-Control-Allow-Credential': 'true'
 			}),
