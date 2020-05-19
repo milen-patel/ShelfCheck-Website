@@ -22,7 +22,7 @@ function HomePage() {
 							<Link to="/contact">
 								<button type="button" className="ContactButton"> Contact Us</button>
 							</Link>
-							<Link to="coffee.html" target="_blank">
+							<Link to="/coffee" target="_blank">
 								<button type="button" className="ContactButton"> Buy A Coffee</button>
 							</Link>
 						</div>
