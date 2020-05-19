@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/ItemChooserStyles.css';
-
+/* Preparinig for temp removal */
 /* ItemChooser is responsible for visualizing all the items that
  * shelfCheck monitors. 
  *
