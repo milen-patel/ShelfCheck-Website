@@ -56,7 +56,7 @@ function HomePage() {
 				</div>
 				<BrowserView>
 					<div className="footer">
-						<Link to="/policy">
+						<Link to="/privacy">
 							<p className="policytext">Privacy Policy</p>
 						</Link>
 						<Link to="/terms">
@@ -70,7 +70,7 @@ function HomePage() {
 						<button type="button" className="MobileContactButton"> Contact Us</button>
 					</Link>
 					<div className="mobilefooter">
-						<Link to="/policy">
+						<Link to="/privacy">
 							<p className="policytext">Privacy Policy</p>
 						</Link>
 						<Link to="/terms">

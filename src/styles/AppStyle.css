@@ -4,7 +4,9 @@
 	margin: 0;
 	min-height: 1000px;
 }
-
+.generalterms {
+	text-align: left;
+}
 .Logo {
 	border-radius: 50%;
 	padding-top: 46px;

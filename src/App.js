@@ -30,16 +30,16 @@ class App extends Component {
 						</div>
 					</div>
 				} />
-				<Route path="/policy" render={props =>
+				<Route path="/privacy" render={props =>
 					<div>
-						<div className="general">
+						<div className="generalterms">
 							<PolicyComponent />
 						</div>
 					</div>
 				} />
 				<Route path="/terms" render={props =>
 					<div>
-						<div className="general">
+						<div className="generalterms">
 							<TermsComponent />
 						</div>
 					</div>
