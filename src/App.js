@@ -53,7 +53,7 @@ class App extends Component {
 				} />
 				<Route path="/coffee" render={props =>
 					<div>
-<meta http-equiv="refresh" content="0; url=https://ko-fi.com/shelfcheck" />
+						<meta http-equiv="refresh" content="0; url=https://ko-fi.com/shelfcheck" />
 					</div>
 				} />
 			</div>

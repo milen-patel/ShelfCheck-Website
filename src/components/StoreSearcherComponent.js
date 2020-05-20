@@ -69,7 +69,7 @@ class StoreSearcherComponent extends Component {
 
 	conductSearch() {
 		this.setState({isLoading:true})
-		fetch('https://api.shelfcheck.io/v1/get-closest-stores-single-item', { 
+		fetch('https://graphimmunity.xyz/https://api.shelfcheck.io/v1/get-closest-stores-single-item', { 
 			method: 'POST', 
 			headers: new Headers({
 				'x-api-key': keys["single-item-search"], 
