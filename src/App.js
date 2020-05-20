@@ -3,6 +3,8 @@ import {Route, Switch} from 'react-router-dom';
 import HomePage from './components/HomePageComponent.js';
 import StoreSearcherComponent from './components/StoreSearcherComponent.js';
 import './styles/AppStyle.css';
+import PolicyComponent from './components/PolicyComponent.js';
+import TermsComponent from './components/TermsComponent.js';
 
 class App extends Component {
 	render() {
@@ -25,6 +27,20 @@ class App extends Component {
 					<div>
 						<div className="general">
 							<p> Coming </p>
+						</div>
+					</div>
+				} />
+				<Route path="/policy" render={props =>
+					<div>
+						<div className="general">
+							<PolicyComponent />
+						</div>
+					</div>
+				} />
+				<Route path="/terms" render={props =>
+					<div>
+						<div className="general">
+							<TermsComponent />
 						</div>
 					</div>
 				} />
