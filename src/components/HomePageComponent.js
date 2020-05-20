@@ -69,6 +69,9 @@ function HomePage() {
 					<Link to="/contact">
 						<button type="button" className="MobileContactButton"> Contact Us</button>
 					</Link>
+					<Link to="/coffee">
+						<button type="button" className="MobileContactButton"> Buy A Coffee</button>
+					</Link>
 					<div className="mobilefooter">
 						<Link to="/privacy" style={{textDecoration:'none'}}>
 							<p className="policytext">Privacy Policy</p>
