@@ -22,7 +22,7 @@ function HomePage() {
 							<Link to="/contact">
 								<button type="button" className="ContactButton"> Contact Us</button>
 							</Link>
-							<Link to="/coffee" target="_blank">
+							<Link to="/coffee">
 								<button type="button" className="ContactButton"> Buy A Coffee</button>
 							</Link>
 						</div>
@@ -56,10 +56,10 @@ function HomePage() {
 				</div>
 				<BrowserView>
 					<div className="footer">
-						<Link to="/privacy">
+						<Link to="/privacy" style={{textDecoration:'none'}}>
 							<p className="policytext">Privacy Policy</p>
 						</Link>
-						<Link to="/terms">
+						<Link to="/terms" style={{textDecoration:'none'}}>
 							<p className="policytext">Terms and Conditions</p>
 						</Link>
 					</div>
@@ -70,10 +70,10 @@ function HomePage() {
 						<button type="button" className="MobileContactButton"> Contact Us</button>
 					</Link>
 					<div className="mobilefooter">
-						<Link to="/privacy">
+						<Link to="/privacy" style={{textDecoration:'none'}}>
 							<p className="policytext">Privacy Policy</p>
 						</Link>
-						<Link to="/terms">
+						<Link to="/terms" style={{textDecoration:'none'}}>
 							<p className="policytext">Terms and Conditions</p>
 						</Link>
 					</div>

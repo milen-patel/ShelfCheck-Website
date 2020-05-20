@@ -44,6 +44,18 @@ class App extends Component {
 						</div>
 					</div>
 				} />
+				<Route path="/terms" render={props =>
+					<div>
+						<div className="generalterms">
+							<TermsComponent />
+						</div>
+					</div>
+				} />
+				<Route path="/coffee" render={props =>
+					<div>
+<meta http-equiv="refresh" content="0; url=https://ko-fi.com/shelfcheck" />
+					</div>
+				} />
 			</div>
 			</Switch>
 		)
