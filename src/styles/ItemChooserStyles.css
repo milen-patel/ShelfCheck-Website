@@ -1,3 +1,8 @@
+@font-face {
+	font-family: duck;
+	src: url(../include/ProximaNova-Regular.otf);
+}
+
 .categoryForm {
 	border-radius: 10px     10px      0           0;
     box-shadow: 0 0 0pt 1pt #333333;
@@ -8,12 +13,14 @@
 	padding-top:10px;
 	padding-bottom:10px;
 	flex-wrap: wrap;
+	font-family: duck;
 
 }
 .categoryForm label 
 {
   padding-right:4px;
   padding-left:4px;
+  font-family: duck;
 }
 
 .itemListForm {
