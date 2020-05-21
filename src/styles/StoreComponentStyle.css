@@ -1,3 +1,8 @@
+@font-face {
+	font-family: duck;
+	src: url(../include/ProximaNova-Regular.otf);
+}
+
 .primary {
 	background-color: #7a9fd6;
    	text-align: center;
@@ -15,6 +20,7 @@
 	justify-content: center;
 	padding-left:25%;
 	padding-right:25%;
+	font-family: duck;
 }
 
 .storeDescriptorLabel {
@@ -32,6 +38,7 @@
   min-width:100px;
   height: 30px;
   border-radius: 8px;
+  font-family: duck;
 }
 
 .SearchPageHeader {
