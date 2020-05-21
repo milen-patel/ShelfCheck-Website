@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import CartArt from "../include/ShoppingCart.png";
 import WhiteLogo from "../include/shelfCheckWhiteLogo.png";
+import PlayBadge from "../include/PlayBadge.png";
+import AppleBadge from "../components/AppleBadge";
 import '../styles/HomePageStyle.css';
 import TeamPersonVisualizer from './TeamPersonVisualizer.js';
 import { BrowserView, MobileView } from "react-device-detect"; /* https://www.npmjs.com/package/react-device-detect */
@@ -36,7 +38,7 @@ function HomePage() {
 				</MobileView>
 				<div className="InfoText">
 					<h1 className="HeaderText"> Know What's In Store </h1>
-					<h2 className="SecondaryText"> Create A Shopping List to Get Started </h2>
+					<h2 className="SecondaryText"> Create A Shopping List to Test Us Out </h2>
 				</div>
 				<div className="ButtonDiv">
 				<Link to="/search">
@@ -44,8 +46,15 @@ function HomePage() {
 				</Link>
 				</div>
 				<img src={CartArt} alt="CartArt" className="CartArt"/>
+
+				<div className="AppLinksBar">
+					<AppleBadge />
+					<img src={PlayBadge} alt="Google Play Badge" className="PlayBadge" />
+
+				</div>
+
 				<h1 className="SubHeaderText"> About Us </h1>
-				<p className="companyExplanation">ShelfCheck is a novel data solutions company providing consumer-sourced reports of current store inventories. Inspired by the country-wide shortages of common household goods due to the the COVID-19 pandemic, our founders sought to develop a tool that could make one-stop shopping a reality.  </p>
+				<p className="companyExplanation">shelfCheck is a novel data solutions company providing consumer-sourced reports of current store inventories. Inspired by the country-wide shortages of common household goods due to the the COVID-19 pandemic, our founders sought to develop a tool that could make one-stop shopping a reality.  </p>
 				<h1 className="SubHeaderText"> Meet the Team </h1>
 				<div className="team">
 					<TeamPersonVisualizer name = "Anthony Guzzo" role = "Chief Design Officer, UX Specialist"/>
