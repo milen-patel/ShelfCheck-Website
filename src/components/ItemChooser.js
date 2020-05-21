@@ -12,7 +12,7 @@ import '../styles/ItemChooserStyles.css';
 class ItemChooser  extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {categoryToShow: 'nutrition', itemsSelected: []};
+		this.state = {categoryToShow: 'nutrition', itemsSelected: ["Bread"]};
 		this.handleCategoryChange = this.handleCategoryChange.bind(this);
 		this.getAppropriateSubchoices = this.getAppropriateSubchoices.bind(this);
 		this.handleIndividualItemSelectChange = this.handleIndividualItemSelectChange.bind(this);
@@ -63,14 +63,14 @@ class ItemChooser  extends React.Component {
 	    return(
 			<div>
 			<form onChange={this.handleCategoryChange} className="categoryForm">
-				<input type="radio" id="nutrition" name="category" value="nutrition" defaultChecked="checked"/>
-				<label htmlFor="nutrition"> Nutrition </label>
-				<input type="radio" id="power" name="category" value="power" />
-				<label htmlFor="power"> Power </label>
-				<input type="radio" id="cleaning" name="category" value="cleaning" />
-				<label htmlFor="cleaning"> Cleaning </label>
-				<input type="radio" id="health" name="category" value="health" />
-				<label htmlFor="health"> Health </label>
+				<li><input type="radio" id="nutrition" name="category" value="nutrition" defaultChecked="checked"/>
+				<label htmlFor="nutrition"> Nutrition </label></li>
+				<li><input type="radio" id="power" name="category" value="power" />
+				<label htmlFor="power"> Power </label></li>
+				<li><input type="radio" id="cleaning" name="category" value="cleaning" />
+				<label htmlFor="cleaning"> Cleaning </label></li>
+				<li><input type="radio" id="health" name="category" value="health" />
+				<label htmlFor="health"> Health </label></li>
 			</form>
 			{this.getAppropriateSubchoices()}
 			</div>	
@@ -84,8 +84,8 @@ class ItemChooser  extends React.Component {
 		if (this.state.categoryToShow === "nutrition") {
 			return (
 				<form className="itemListForm">
-					<li><input type="checkbox" id="bread" name="bread" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("bread")} />
-					<label htmlFor="bread"> Bread </label></li>
+					<li><input type="checkbox" id="Bread" name="Bread" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Bread")} />
+					<label htmlFor="Bread"> Bread </label></li>
 					<li><input type="checkbox" id="milk" name="milk" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("milk")} />
 					<label htmlFor="milk"> Milk </label></li>
 					<li><input type="checkbox" id="eggs" name="eggs" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("eggs")} />

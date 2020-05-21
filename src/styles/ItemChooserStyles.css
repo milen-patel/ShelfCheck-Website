@@ -18,27 +18,27 @@
 }
 
 .categoryForm li {
-  float: left;
-  margin: 0 5px 0 0;
-  width: 100px;
-  height: 40px;
-  position: relative;
+	list-style-type: none;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 
 .categoryForm input[type="radio"] {
   opacity: 0.01;
-  z-index: 100;
 }
 
 .categoryForm label {
   padding: 5px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius:10px;
   cursor: pointer;
-  z-index: 90;
+  padding-left:25px;
+  padding-right:25px;
 }
 .categoryForm input[type="radio"]:checked+label,
 .Checked+label {
+  border: 3px solid black;
+  border-radius:10px;
 	color:white;
 }
 
@@ -47,12 +47,33 @@
     box-shadow: 0 0 0pt 1pt #333333;
 	margin-bottom:10px;
 	padding-left:25%;
+	padding-top:10px;
 	padding-right:25%;
 	background-color: #D8F4F6;
 	list-style-type: none;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	min-height:50px;
 	align-items:baseline;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
+.itemListForm input {
+	visibility: hidden;
+}
+.itemListForm li {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.itemListForm label {
+  border: 1.5px solid black;
+  border-radius:8px;
+  padding-right:5px;
+  padding-top:1px;
+  padding-bottom:1px;
+}
+
+.itemListForm input[type=checkbox]:checked + label {
+	border: 3px solid black;
+}

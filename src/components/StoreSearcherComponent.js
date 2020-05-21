@@ -13,7 +13,7 @@ class StoreSearcherComponent extends Component {
 		this.state = {
 			todos: [],
 			isLoading: false,
-			queryItem: props.itemName,
+			queryItem: "Bread",
 			queryLat: props.lat,
 			queryLon: props.lon,
 		}
@@ -114,8 +114,13 @@ class StoreSearcherComponent extends Component {
 		this.conductSearch();
 	}
 
-	itemListChangeRequested(items) {
-		console.log(items);
+	itemListChangeRequested(newList) {
+		if (newList[0] !== this.state.queryItem) {
+			this.setState(
+				{
+					queryItem: newList[0],
+				}, () => this.conductSearch())
+		}
 	}
 }
 
