@@ -16,11 +16,30 @@
 	font-family: duck;
 
 }
-.categoryForm label 
-{
-  padding-right:4px;
-  padding-left:4px;
-  font-family: duck;
+
+.categoryForm li {
+  float: left;
+  margin: 0 5px 0 0;
+  width: 100px;
+  height: 40px;
+  position: relative;
+}
+
+.categoryForm input[type="radio"] {
+  opacity: 0.01;
+  z-index: 100;
+}
+
+.categoryForm label {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius:10px;
+  cursor: pointer;
+  z-index: 90;
+}
+.categoryForm input[type="radio"]:checked+label,
+.Checked+label {
+	color:white;
 }
 
 .itemListForm {
@@ -36,5 +55,4 @@
 	min-height:50px;
 	align-items:baseline;
 }
-.test {
-}
+

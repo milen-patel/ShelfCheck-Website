@@ -44,14 +44,14 @@ function HomePage() {
 				<Link to="/search">
 					<button type="button" className="TryButton">Create a List</button>
 				</Link>
-				</div>
-				<img src={CartArt} alt="CartArt" className="CartArt"/>
-
 				<div className="AppLinksBar">
 					<AppleBadge />
 					<img src={PlayBadge} alt="Google Play Badge" className="PlayBadge" />
 
 				</div>
+				</div>
+				<img src={CartArt} alt="CartArt" className="CartArt"/>
+
 
 				<h1 className="SubHeaderText"> About Us </h1>
 				<p className="companyExplanation">shelfCheck is a novel data solutions company providing consumer-sourced reports of current store inventories. Inspired by the country-wide shortages of common household goods due to the the COVID-19 pandemic, our founders sought to develop a tool that could make one-stop shopping a reality.  </p>

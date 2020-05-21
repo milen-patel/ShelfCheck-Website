@@ -36,18 +36,11 @@ class ItemChooser  extends React.Component {
 	handleIndividualItemSelectChange(e) {
 		var iName = e.target.id;
 		if (this.state.itemsSelected.includes(iName)) {
-			this.setState((state) => {
-				var index = state.itemsSelected.indexOf(iName);
-				if (index !== -1) {
-					state.itemsSelected.splice(index, 1);
-					return ({itemsSelected: state.itemsSelected});
-				}
-			});
+			return;
 		} else {
-			this.setState((old) => {
-				old.itemsSelected.push(iName);
-				return ({itemsSelected: old.itemsSelected});
-			});
+			this.setState(
+				{itemsSelected: Array(iName)}
+			);
 		}
 	}
 	
