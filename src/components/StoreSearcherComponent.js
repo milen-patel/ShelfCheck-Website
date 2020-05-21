@@ -14,8 +14,8 @@ class StoreSearcherComponent extends Component {
 			todos: [],
 			isLoading: false,
 			queryItem: "Bread",
-			queryLat: props.lat,
-			queryLon: props.lon,
+			queryLat: 0.0,
+			queryLon: 0.0,
 		}
 		this.convertRawToElement = this.convertRawToElement.bind(this);
 		this.addressChangeRequested = this.addressChangeRequested.bind(this);
