@@ -28,16 +28,20 @@
 
 
 .BackButton {
-  background-color: #0d3281;
-  border: none;
+  cursor: pointer;
+  background-color: #68ADEB;
+  border: 2px solid black;
   color: white;
-  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   font-size: 16px;
   font-weight: 700;
-  min-width:100px;
-  height: 30px;
   border-radius: 8px;
   font-family: duck;
+  padding: 5px;
+  padding-left:25px;
+  padding-right:25px;
 }
 .ButtonHolder{
 	padding-top:10px;
