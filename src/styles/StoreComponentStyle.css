@@ -22,7 +22,6 @@
 	padding-right:25%;
 	font-family: duck;
 }
-
 .storeDescriptorLabel {
 	font-weight:bold;
 }
@@ -39,6 +38,10 @@
   height: 30px;
   border-radius: 8px;
   font-family: duck;
+}
+.ButtonHolder{
+	padding-top:10px;
+	padding-bottom:10px;
 }
 
 .SearchPageHeader {

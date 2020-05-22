@@ -29,12 +29,14 @@ class StoreSearcherComponent extends Component {
 			return (
 				<div className="StoreSearcher">
 					<img src={Logo} alt="Logo" className="Logo"/>
+					<div className="ButtonHolder">
+						<Link to="/">
+							<button type="button" className="BackButton">Back</button>
+						</Link>
+					</div>
 					<ItemChooser notifyFunction={this.itemListChangeRequested}/>
 					<AddressSearchComponent onClick={this.addressChangeRequested}/>
 					<p>Loading...</p>
-					<Link to="/">
-						<button type="button" className="BackButton">Back</button>
-					</Link>
 				</div>
 			);
 		}
@@ -43,12 +45,14 @@ class StoreSearcherComponent extends Component {
 			return (
 				<div className="StoreSearcher">
 					<img src={Logo} alt="Logo" className="Logo"/>
+					<div className="ButtonHolder">
+						<Link to="/">
+							<button type="button" className="BackButton">Back</button>
+						</Link>
+					</div>
 					<ItemChooser notifyFunction={this.itemListChangeRequested}/>
 					<AddressSearchComponent onClick={this.addressChangeRequested} />
 					<p> No Results Found </p>	
-					<Link to="/">
-						<button type="button" className="BackButton">Back</button>
-					</Link>
 				</div>
 			)
 		}
@@ -57,12 +61,14 @@ class StoreSearcherComponent extends Component {
 		return (
 			<div className="StoreSearcher">
 				<img src={Logo} alt="Logo" className="Logo"/>
-					<ItemChooser notifyFunction={this.itemListChangeRequested}/>
+				<div className="ButtonHolder">
+					<Link to="/">
+						<button type="button" className="BackButton">Back</button>
+					</Link>
+				</div>
+				<ItemChooser notifyFunction={this.itemListChangeRequested}/>
 				<AddressSearchComponent onClick={this.addressChangeRequested}/>
 				{parsedData}
-				<Link to="/">
-					<button type="button" className="BackButton">Back</button>
-				</Link>
 			</div>
 		)
 	}
