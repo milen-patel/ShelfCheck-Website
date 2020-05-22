@@ -86,49 +86,49 @@ class ItemChooser  extends React.Component {
 				<form className="itemListForm">
 					<li><input type="checkbox" id="Bread" name="Bread" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Bread")} />
 					<label htmlFor="Bread"> Bread </label></li>
-					<li><input type="checkbox" id="milk" name="milk" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("milk")} />
-					<label htmlFor="milk"> Milk </label></li>
-					<li><input type="checkbox" id="eggs" name="eggs" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("eggs")} />
-					<label htmlFor="eggs"> Eggs </label></li>
-					<li><input type="checkbox" id="water" name="water" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("water")} />
-					<label htmlFor="water"> Water </label></li>
-					<li><input type="checkbox" id="beef" name="beef" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("beef")} />
-					<label htmlFor="beef"> Ground Beef </label></li>
+					<li><input type="checkbox" id="Milk" name="Milk" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Milk")} />
+					<label htmlFor="Milk"> Milk </label></li>
+					<li><input type="checkbox" id="Eggs" name="Eggs" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Eggs")} />
+					<label htmlFor="Eggs"> Eggs </label></li>
+					<li><input type="checkbox" id="Bottled Water" name="Bottled Water" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Bottled Water")} />
+					<label htmlFor="Bottled Water"> Water </label></li>
+					<li><input type="checkbox" id="Ground Beef" name="Ground Beef" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Ground Beef")} />
+					<label htmlFor="Ground Beef"> Ground Beef </label></li>
 				</form>
 			);
 		} else if (this.state.categoryToShow === "power") {
 			return (
 				<form className="itemListForm">
-					<li><input type="checkbox" id="toilet_paper" name="toilet_paper" value="second" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("toilet_paper")} />
-					<label htmlFor="toilet_paper"> Toilet Paper </label></li>
-					<li><input type="checkbox" id="diapers" name="diapers" value="second" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("diapers")} />
-					<label htmlFor="diapers"> Diapers </label></li>
-					<li><input type="checkbox" id="masks" name="masks" value="second" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("masks")} />
-					<label htmlFor="masks"> Masks </label></li>
+					<li><input type="checkbox" id="Toilet Paper" name="Toilet Paper" value="second" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Toilet Paper")} />
+					<label htmlFor="Toilet Paper"> Toilet Paper </label></li>
+					<li><input type="checkbox" id="Diapers" name="Diapers" value="second" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Diapers")} />
+					<label htmlFor="Diapers"> Diapers </label></li>
+					<li><input type="checkbox" id="Masks" name="Masks" value="second" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Masks")} />
+					<label htmlFor="Masks"> Masks </label></li>
 				</form>
 			);
 		} else if (this.state.categoryToShow === "cleaning") {
 			return (
 				<form className="itemListForm">
-					<li><input type="checkbox" id="garbage_bags" name="garbage_bags" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("garbage_bags")} />
-					<label htmlFor="garbage_bags"> Garbage Bags </label></li>
-					<li><input type="checkbox" id="clorox_wipes" name="clorox_wipes" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("clorox_wipes")} />
-					<label htmlFor="clorox_wipes"> Clorox Wipes </label></li>
-					<li><input type="checkbox" id="sanitizer" name="sanitizer" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("sanitizer")} />
-					<label htmlFor="sanitizer"> Hand Sanitizer </label></li>
-					<li><input type="checkbox" id="hand_soap" name="hand_soap" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("hand_soap")} />
-					<label htmlFor="hand_soap"> Hand Soap </label></li>
-					<li><input type="checkbox" id="paper_towels" name="paper_towels" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("paper_towels")} />
-					<label htmlFor="paper_towels"> Paper Towels </label></li>
+					<li><input type="checkbox" id="Garbage Bags" name="Garbage Bags" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Garbage Bags")} />
+					<label htmlFor="Garbage Bags"> Garbage Bags </label></li>
+					<li><input type="checkbox" id="Disinfectant Wipes" name="Disenfectant Wipes" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Disinfectant Wipes")} />
+					<label htmlFor="Disinfectant Wipes"> Disinfectant Wipes </label></li>
+					<li><input type="checkbox" id="Hand Sanitizer" name="Hand Sanitizer" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Hand Sanitizer")} />
+					<label htmlFor="Hand Sanitizer"> Hand Sanitizer </label></li>
+					<li><input type="checkbox" id="Hand Soap" name="Hand Soap" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Hand Soap")} />
+					<label htmlFor="Hand Soap"> Hand Soap </label></li>
+					<li><input type="checkbox" id="Paper Towels" name="Paper Towels" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Paper Towels")} />
+					<label htmlFor="Paper Towels"> Paper Towels </label></li>
 				</form>
 			);
 		} else if (this.state.categoryToShow === "health") {
 			return (
 				<form className="itemListForm">
-					<li><input type="checkbox" id="batteries" name="batteries" value="fourth" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("batteries")} />
-					<label htmlFor="batteries"> Batteries </label></li>
-					<li><input type="checkbox" id="flashlights" name="flashlights" value="fourth" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("flashlights")} />
-					<label htmlFor="flashlights"> Flashlights </label></li>
+					<li><input type="checkbox" id="Batteries" name="Batteries" value="fourth" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Batteries")} />
+					<label htmlFor="Batteries"> Batteries </label></li>
+					<li><input type="checkbox" id="Flashlights" name="Flashlights" value="fourth" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Flashlights")} />
+					<label htmlFor="Flashlights"> Flashlights </label></li>
 				</form>
 			);
 		}
