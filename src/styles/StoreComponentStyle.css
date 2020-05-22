@@ -4,16 +4,17 @@
 }
 
 .primary {
-	background-color: #7a9fd6;
+	background-color: #68ADEB;
    	text-align: center;
    	display:flex;
    	flex-direction:column;
-	border-radius: 25px;
-	padding-top: 1%;
-	padding-bottom: 1%;
+	border-radius: 40px;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
 	margin-top: 1%;
 	margin-bottom: 1%;
-	color: #333333;
+	color: white;
+	border: 1.5px black;
 }
 
 .StoreSearcher {

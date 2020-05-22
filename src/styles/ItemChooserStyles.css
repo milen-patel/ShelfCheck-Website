@@ -34,7 +34,7 @@
   cursor: pointer;
   padding-left:25px;
   padding-right:25px;
-  background-color: white;
+  background-color: #D8F4F6;
 }
 .categoryForm input[type="radio"]:checked+label,
 .Checked+label {
