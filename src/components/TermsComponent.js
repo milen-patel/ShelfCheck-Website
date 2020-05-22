@@ -1,12 +1,13 @@
 import React from 'react';
+import '../styles/LegalPagesStyle.css';
 
 function TermsComponent(props) {
 		return (
-			<div>
-			<p><b>TERMS OF USE</b></p>
+			<div class='terms'>
+			<h1>TERMS OF USE</h1>
 
 
-<p><b>Last updated May 30, 2020</b></p>
+<h2>Last updated May 30, 2020</h2>
 
 
 
