@@ -75,7 +75,7 @@
 	justify-content: center;
 	align-items: center;
 	padding-top: 2%;
-	padding-bottom: 2%;
+	padding-bottom: 6%;
 }
 
 .PlayBadge {
@@ -173,6 +173,8 @@
 	animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+	padding-top:10%;
+	padding-bottom:8%;
 }
 
 .SubHeaderText {
@@ -202,12 +204,6 @@
   	min-width:300px;
   	height: 60px;
   	border-radius: 15px;
-	/* Delayed appereance */
-	opacity:0;
-	animation: fadeInAnimation ease 3s;
-	animation-delay: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 .ButtonDiv {

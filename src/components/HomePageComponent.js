@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import CartArt from "../include/ShoppingCart.png";
 import WhiteLogo from "../include/shelfCheckWhiteLogo.png";
 import PlayBadge from "../include/PlayBadge.png";
 import AppleBadge from "../components/AppleBadge";
@@ -50,7 +49,7 @@ function HomePage() {
 
 				</div>
 				</div>
-				<img src={CartArt} alt="CartArt" className="CartArt"/>
+					<hr width="30%" color="white" />
 
 
 				<h1 className="SubHeaderText"> About Us </h1>
