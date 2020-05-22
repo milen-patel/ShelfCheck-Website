@@ -1,5 +1,7 @@
 /* Documentation : https://www.npmjs.com/package/react-google-places-autocomplete#get-lat-lng */
 import React from 'react';
+import '../styles/LegalPagesStyle.css';
+
 /* AddressSearchComponent is responsible for creating a search bar that
  * autocompletes addresses using Google's autocomplete api. onClick is
  * the sole prop and refers to the function that this component will call
@@ -8,7 +10,7 @@ import React from 'react';
  */
 function PolicyComponent(props) {
 		return (
-		  <div>
+		  <div class='terms'>
 			<h1>PRIVACY NOTICE</h1>
 			<h2> Last updated May 30, 2020 </h2>
 
