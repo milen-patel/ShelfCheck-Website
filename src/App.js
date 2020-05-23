@@ -6,6 +6,7 @@ import './styles/AppStyle.css';
 import PolicyComponent from './components/PolicyComponent.js';
 import TermsComponent from './components/TermsComponent.js';
 
+
 class App extends Component {
 	render() {
 		return (
