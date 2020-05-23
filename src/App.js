@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
+import { BrowserView, MobileView } from "react-device-detect"; /* https://www.npmjs.com/package/react-device-detect */
 import HomePage from './components/HomePageComponent.js';
-import StoreSearcherComponent from './components/StoreSearcherComponent.js';
-import './styles/AppStyle.css';
 import PolicyComponent from './components/PolicyComponent.js';
 import TermsComponent from './components/TermsComponent.js';
-import { BrowserView, MobileView } from "react-device-detect"; /* https://www.npmjs.com/package/react-device-detect */
-
+import ContactPageComponent from './components/ContactPageComponent.js';
+import StoreSearcherComponent from './components/StoreSearcherComponent.js';
+import './styles/AppStyle.css';
 
 class App extends Component {
 	render() {
@@ -33,10 +33,8 @@ class App extends Component {
 					</div>
 				} />
 				<Route path="/contact" render={props =>
-					<div>
-						<div className="general">
-							<p> Coming </p>
-						</div>
+					<div className="general">
+						<ContactPageComponent />
 					</div>
 				} />
 				<Route path="/privacy" render={props =>

@@ -1,0 +1,55 @@
+.contactPageContainer {
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+.contactForm {
+	display: flex;
+	flex-direction: column;
+	padding-left:1%;
+	padding-right:1%;
+	padding-top:1%;
+	padding-bottom:1%;
+	border-style:solid;
+	border-radius:10px;
+	border-width:2px;
+	border-color:#333333;
+}
+
+.formTextBox {
+	/* Add spacing between each form element */
+	margin-bottom: 1%;
+	/* Round the text boxes */
+	border-radius:25px; 
+	/* Make the text boxes taller */
+	height:25px;
+	/* Remove the default border from the textboxes */
+	border: 0px none;
+	text-align:center;
+}
+
+.formMessageBox {
+	margin-bottom: 1%;
+	border-radius:25px; 
+	height:250px;
+	border: 0px none;
+	resize:none;
+	text-align:center;
+}
+
+.submitButton {
+	margin-left:20%;
+	margin-right:20%;
+	margin-top:5%;
+	cursor: pointer;
+  	background-color: #68ADEB;
+  	border: 2px solid black;
+  	color: white;
+  	font-size: 2em;
+  	border-radius: 8px;
+  	font-family: duck;
+}
+
+.BackButton {
+	margin-top:10%;
+}

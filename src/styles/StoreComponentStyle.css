@@ -7,13 +7,18 @@
 	background-color: #68ADEB;
    	text-align: center;
    	display:flex;
-   	flex-direction:column;
+   	flex-direction:row;
 	padding-top: 2.5%;
 	padding-bottom: 2.5%;
+	justify-content: center;
 	margin-top: 1%;
 	margin-bottom: 1%;
 	color: white;
 	border: 1.5px black;
+	border-radius: 25px;
+}
+.inner{
+	width:50px;
 }
 
 .StoreSearcher {
@@ -55,4 +60,10 @@
 .Logo {
 	padding-top: 16px;
 	width: 100%;
+}
+
+.NavigateButton {
+	margin-left:10px;
+	width:100%;
+	height:auto;
 }
