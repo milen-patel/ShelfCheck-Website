@@ -63,7 +63,7 @@ class StoreSearcherComponent extends Component {
 				<img src={Logo} alt="Logo" className="Logo"/>
 				<div className="ButtonHolder">
 					<Link to="/">
-						<button type="button" className="BackButton">Back</button>
+						<button type="button" className="BackButton">Back Home</button>
 					</Link>
 				</div>
 				<ItemChooser notifyFunction={this.itemListChangeRequested}/>

@@ -3,6 +3,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 You can visit the website [here](https://shelfcheck.io).
 
+### Install
+
+To install everything needed to develop and build this webpage
+
+`npm install`
+
 ### Develop
 
 To run this webpage in developer mode on localhost:3000
