@@ -5,6 +5,7 @@ import StoreSearcherComponent from './components/StoreSearcherComponent.js';
 import './styles/AppStyle.css';
 import PolicyComponent from './components/PolicyComponent.js';
 import TermsComponent from './components/TermsComponent.js';
+import { BrowserView, MobileView } from "react-device-detect"; /* https://www.npmjs.com/package/react-device-detect */
 
 
 class App extends Component {
@@ -19,9 +20,16 @@ class App extends Component {
 				} exact />
 				<Route path="/search" render={props =>
 					<div>
-						<div className="general">
-							<StoreSearcherComponent itemName="Bread"/>
-						</div>
+						<MobileView>
+							<div className="general">
+								<StoreSearcherComponent itemName="Bread"/>
+							</div>
+						</MobileView>
+						<BrowserView>
+							<div className="generalSearchComputer">
+								<StoreSearcherComponent itemName="Bread"/>
+							</div>
+						</BrowserView>
 					</div>
 				} />
 				<Route path="/contact" render={props =>

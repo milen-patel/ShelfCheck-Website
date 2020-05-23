@@ -11,3 +11,19 @@
 	padding-top: 46px;
 	width: 70%;
 }
+
+/* When we want to render the search page, we want the mobile to use the entirescreen width, but we want the browser version to only use the middle portion. App.js then renders the components with differently based upon the client */
+
+.generalSearchComputer {
+	/* Maintain .general */
+	background-color: #b9ecf0;
+   	text-align: center;
+	margin: 0;
+	min-height: 1000px;
+
+	/* Add the padding for computers */
+	padding-left:20%;
+	padding-right:20%;
+
+}
+
