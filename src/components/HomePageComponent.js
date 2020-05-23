@@ -46,7 +46,6 @@ function HomePage() {
 				<div className="AppLinksBar">
 					<AppleBadge />
 					<img src={PlayBadge} alt="Google Play Badge" className="PlayBadge" />
-
 				</div>
 				</div>
 					<hr width="30%" color="white" />
@@ -63,6 +62,7 @@ function HomePage() {
 					<TeamPersonVisualizer name = "Milen Patel" role = "Engineer, Web-Developement #UNC"/>
 				</div>
 				<BrowserView>
+						<hr width="15%" color="#333333" />
 					<div className="footer">
 						<Link to="/privacy" style={{textDecoration:'none'}}>
 							<p className="policytext">Privacy Policy</p>
