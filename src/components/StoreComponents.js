@@ -15,17 +15,17 @@ import Navigate from '../include/Navigate.png';
 function StoreComponent(props) {
 	return (
 		<div className='primary'>
-		<div>
-		<h1><u> {props.name}</u></h1>
-		<p>{props.addy}</p>
-		<p><b>Quantity:</b> {Math.round(props.quantity)}</p>
-		<p><b>Distance:</b> {Math.round((Number.EPSILON + props.distance) * 100)/100}</p>
-		</div>
-
 		<div className="inner">
+		<h1><u> {props.name}</u></h1>
 		<a href={generateMapsURL(props.latitude,props.longitude)}>
 			<img src={Navigate} alt="Navigate" className="NavigateButton"/>
 		</a>
+		</div>
+
+		<div>
+		<p>{props.addy}</p>
+		<p><b>Quantity:</b> {Math.round(props.quantity)}</p>
+		<p><b>Distance:</b> {Math.round((Number.EPSILON + props.distance) * 100)/100}</p>
 		</div>
 		</div>
 	)

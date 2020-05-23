@@ -7,7 +7,7 @@
 	background-color: #68ADEB;
    	text-align: center;
    	display:flex;
-   	flex-direction:row;
+   	flex-direction:column;
 	padding-top: 2.5%;
 	padding-bottom: 2.5%;
 	justify-content: center;
@@ -17,8 +17,12 @@
 	border: 1.5px black;
 	border-radius: 25px;
 }
-.inner{
-	width:50px;
+
+.inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items:stretch;
 }
 
 .StoreSearcher {
@@ -63,7 +67,7 @@
 }
 
 .NavigateButton {
-	margin-left:10px;
-	width:100%;
+	margin-left:18%;
+	width:40px;
 	height:auto;
 }
