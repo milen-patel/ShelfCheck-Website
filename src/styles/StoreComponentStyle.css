@@ -8,7 +8,6 @@
    	text-align: center;
    	display:flex;
    	flex-direction:column;
-	border-radius: 40px;
 	padding-top: 2.5%;
 	padding-bottom: 2.5%;
 	margin-top: 1%;
@@ -55,5 +54,6 @@
 
 .Logo {
 	padding-top: 16px;
+	background-color: pink;
 	width: 100%;
 }
