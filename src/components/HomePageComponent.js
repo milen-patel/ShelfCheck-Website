@@ -44,7 +44,9 @@ function HomePage() {
 					<button type="button" className="TryButton">Create a List</button>
 				</Link>
 				<div className="AppLinksBar">
-					<AppleBadge />
+					<a href="https://apps.apple.com/us/app/shelfcheck-shop-smarter/id1514416220">
+						<AppleBadge />
+					</a>
 					<img src={PlayBadge} alt="Google Play Badge" className="PlayBadge" />
 
 				</div>
