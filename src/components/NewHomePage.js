@@ -1,6 +1,10 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 import Logo from '../include/shelfCheckWhiteLogo.png'
+import PlayBadge from "../include/PlayBadge.png";
+import AppleBadge from "../components/AppleBadge";
+import '../styles/NewHomePageStyle.css';
 
 // Little helpers ...
 const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
@@ -61,20 +65,37 @@ class NewHomePage extends React.Component {
         <ParallaxLayer
           offset={0}
           speed={0.1}
-          onClick={() => this.parallax.scrollTo(1)}
+          // onClick={() => this.parallax.scrollTo(1)}
           style={{ display: 'flex', flexDirection:'column',alignItems: 'center', justifyContent: 'center' }}
 		>
-          <img src={Logo} style={{ width: '80%' }} />
-		  <p style={{paddingLeft:'20%', paddingRight:'20%', color:'#333333'}}>shelfCheck is a novel data solutions company providing consumer-sourced reports of current store inventories. Inspired by the country-wide shortages of common household goods due to the the COVID-19 pandemic, our founders sought to develop a tool that could make one-stop shopping a reality.  </p>
+          <img src={Logo} style={{ width: '50%' }} />
 
+          <div style={{backgroundColor: "#7256f399", padding: "2%", marginTop: "5%", marginLeft: "20%", marginRight: "20%", borderRadius: 25, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+		        <p style={{color:'#fff', fontSize: 22, lineHeight: 1.75, fontWeight: "bold"}}>shelfCheck is a novel data solutions company providing consumer-sourced reports of current store inventories. Inspired by the country-wide shortages of common household goods due to the the COVID-19 pandemic, our founders sought to develop a tool that could make one-stop shopping a reality.  </p>
+          </div>
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={1}
           speed={0.1}
-          onClick={() => this.parallax.scrollTo(2)}
+          // onClick={() => this.parallax.scrollTo(2)}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <img src={url('bash')} style={{ width: '40%' }} />
+          
+          <div style={{backgroundColor: "#68ADEB", width: "40%", height: "40%", borderRadius: 35, display: 'flex', flexDirection: "column", justifyContent: 'space-around'}}>
+            <p style={{fontSize: 30, padding: "5%", color: "white"}}>Create a shopping list to test us out</p>
+
+            <Link to="/search">
+              <button type="button" className="TryButton">Create a List</button>
+            </Link>
+
+            <div className="AppLinksBar">
+              <a href="https://apps.apple.com/us/app/shelfcheck-shop-smarter/id1514416220">
+                <AppleBadge />
+              </a>
+              <img src={PlayBadge} alt="Google Play Badge" className="PlayBadge" />
+            </div>
+          </div>
+
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -89,3 +110,8 @@ class NewHomePage extends React.Component {
   }
 }
 export default NewHomePage;
+// second foreground parallax layer content: <img src={url('bash')} style={{ width: '40%' }} />
+
+
+// this site has the way to put all the css into a file
+// https://www.w3schools.com/react/react_css.asp
