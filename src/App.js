@@ -6,6 +6,7 @@ import PolicyComponent from './components/PolicyComponent.js';
 import TermsComponent from './components/TermsComponent.js';
 import ContactPageComponent from './components/ContactPageComponent.js';
 import StoreSearcherComponent from './components/StoreSearcherComponent.js';
+import NewHomePage from './components/NewHomePage.js';
 import './styles/AppStyle.css';
 
 class App extends Component {
@@ -54,6 +55,11 @@ class App extends Component {
 				<Route path="/coffee" render={props =>
 					<div>
 						<meta http-equiv="refresh" content="0; url=https://ko-fi.com/shelfcheck" />
+					</div>
+				} />
+				<Route path="/experimental" render={props =>
+					<div>
+						<NewHomePage />
 					</div>
 				} />
 			</div>
