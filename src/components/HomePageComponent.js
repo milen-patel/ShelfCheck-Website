@@ -20,9 +20,9 @@ function HomePage() {
 							<img src={WhiteLogo} alt="WhiteLogo" className="WhiteLogo"/>
 						</div>
 						<div className="t0">
-							<Link to="/contact">
+							<a href="mailto:contact.shelfcheck@gmail.com">
 								<button type="button" className="ContactButton"> Contact Us</button>
-							</Link>
+							</a>
 							<Link to="/coffee">
 								<button type="button" className="ContactButton"> Buy A Coffee</button>
 							</Link>
@@ -76,9 +76,9 @@ function HomePage() {
 				</BrowserView>
 				<MobileView>
 					<hr width="40%" color="#333333" />
-					<Link to="/contact">
+					<a href="mailto:contact.shelfcheck@gmail.com">
 						<button type="button" className="MobileContactButton"> Contact Us</button>
-					</Link>
+					</a>
 					<Link to="/coffee">
 						<button type="button" className="MobileContactButton"> Buy A Coffee</button>
 					</Link>
