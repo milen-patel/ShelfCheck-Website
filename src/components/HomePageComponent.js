@@ -48,3 +48,51 @@ function HomePage() {
 						<AppleBadge />
 					</a>
 					<img src={PlayBadge} alt="Google Play Badge" className="PlayBadge" />
+				</div>
+				</div>
+					<hr width="30%" color="white" />
+
+
+				<h1 className="SubHeaderText"> About Us </h1>
+				<p className="companyExplanation">shelfCheck is a novel data solutions company providing consumer-sourced reports of current store inventories. Inspired by the country-wide shortages of common household goods due to the the COVID-19 pandemic, our founders sought to develop a tool that could make one-stop shopping a reality.  </p>
+				<h1 className="SubHeaderText"> Meet the Team </h1>
+				<div className="team">
+					<TeamPersonVisualizer name = "Anthony Guzzo" role = "Design, Product #Rice"/>
+					<TeamPersonVisualizer name = "Rohit Jain" role = "Growth, Product #Duke"/>
+					<TeamPersonVisualizer name = "Viraj Shah" role = "Growth, Business #UNC"/>
+					<TeamPersonVisualizer name = "James Taylor" role = "Engineer, Backend and Mobile #Duke"/>
+					<TeamPersonVisualizer name = "Milen Patel" role = "Engineer, Web-Developement #UNC"/>
+				</div>
+				<BrowserView>
+						<hr width="15%" color="#333333" />
+					<div className="footer">
+						<Link to="/privacy" style={{textDecoration:'none'}}>
+							<p className="policytext">Privacy Policy</p>
+						</Link>
+						<Link to="/terms" style={{textDecoration:'none'}}>
+							<p className="policytext">Terms and Conditions</p>
+						</Link>
+					</div>
+				</BrowserView>
+				<MobileView>
+					<hr width="40%" color="#333333" />
+					<a href="mailto:contact.shelfcheck@gmail.com">
+						<button type="button" className="MobileContactButton"> Contact Us</button>
+					</a>
+					<Link to="/coffee">
+						<button type="button" className="MobileContactButton"> Buy A Coffee</button>
+					</Link>
+					<div className="mobilefooter">
+						<Link to="/privacy" style={{textDecoration:'none'}}>
+							<p className="policytext">Privacy Policy</p>
+						</Link>
+						<Link to="/terms" style={{textDecoration:'none'}}>
+							<p className="policytext">Terms and Conditions</p>
+						</Link>
+					</div>
+				</MobileView>
+			</div>
+		)
+}
+
+export default HomePage;
