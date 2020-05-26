@@ -56,7 +56,7 @@ function HomePage() {
 
 
 				<h1 className="SubHeaderText"> About Us </h1>
-				<p className="companyExplanation">shelfCheck is a novel data solutions company providing consumer-sourced reports of current store inventories. Inspired by the country-wide shortages of common household goods due to the the COVID-19 pandemic, our founders sought to develop a tool that could make one-stop shopping a reality.  </p>
+				<p className="companyExplanation">shelfCheck is a novel data solutions company providing consumer-sourced reports of current store inventories. Inspired by the country-wide shortages of common household goods due to the COVID-19 pandemic, our founders sought to develop a tool that could make one-stop shopping a reality.  </p>
 				<h1 className="SubHeaderText"> Meet the Team </h1>
 				<div className="team">
 					<TeamPersonVisualizer name = "Anthony Guzzo" role = "Design, Product #Rice"/>
