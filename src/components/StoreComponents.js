@@ -16,7 +16,7 @@ function StoreComponent(props) {
 	return (
 		<div className='primary'>
 		<div className="inner">
-		<h1><u> {props.name}</u></h1>
+		<h1><b> {props.name}</b></h1>
 		<a href={generateMapsURL(props.latitude,props.longitude)}>
 			<img src={Navigate} alt="Navigate" className="NavigateButton"/>
 		</a>
@@ -24,8 +24,8 @@ function StoreComponent(props) {
 
 		<div>
 		<p>{props.addy}</p>
-		<p><b>Quantity:</b> {Math.round(props.quantity)}</p>
-		<p><b>Distance:</b> {Math.round((Number.EPSILON + props.distance) * 100)/100}</p>
+		<p><b>Estimated Units:</b> {Math.round(props.quantity)}</p>
+		<p><b>Distance:</b> {Math.round((Number.EPSILON + props.distance) * 100)/100} Miles</p>
 		</div>
 		</div>
 	)
