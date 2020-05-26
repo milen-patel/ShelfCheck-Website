@@ -31,6 +31,7 @@ function HomePage() {
 				<div className="InfoText">
 					<h1 className="HeaderText"> Know What's In Store </h1>
 					<h2 className="SecondaryText"> Create A Shopping List to Test Us Out </h2>
+					<h3 className="SecondaryText"> *Starting only in Raleigh/Cary </h3>
 				</div>
 				</BrowserView>
 				<MobileView>
@@ -41,6 +42,7 @@ function HomePage() {
 					<div className="InfoText">
 						<h1 className="MobileHeaderText"> Know What's In Store </h1>
 						<h2 className="MobileSecondaryText"> Create A Shopping List to Test Us Out </h2>
+						<h2 className="MobileSecondaryText"> *Starting only in Raleigh/Cary </h2>
 					</div>
 				</MobileView>
 				<div className="ButtonDiv">
