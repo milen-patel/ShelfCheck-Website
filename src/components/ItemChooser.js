@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/ItemChooserStyles.css';
-/* Preparinig for temp removal */
+
 /* ItemChooser is responsible for visualizing all the items that
  * shelfCheck monitors. 
  *
@@ -96,7 +96,7 @@ class ItemChooser  extends React.Component {
 					<label htmlFor="Ground Beef"> Ground Beef </label></li>
 				</form>
 			);
-		} else if (this.state.categoryToShow === "power") {
+		} else if (this.state.categoryToShow === "health") {
 			return (
 				<form className="itemListForm">
 					<li><input type="checkbox" id="Toilet Paper" name="Toilet Paper" value="second" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Toilet Paper")} />
@@ -122,7 +122,7 @@ class ItemChooser  extends React.Component {
 					<label htmlFor="Paper Towels"> Paper Towels </label></li>
 				</form>
 			);
-		} else if (this.state.categoryToShow === "health") {
+		} else if (this.state.categoryToShow === "power") {
 			return (
 				<form className="itemListForm">
 					<li><input type="checkbox" id="Batteries" name="Batteries" value="fourth" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Batteries")} />
