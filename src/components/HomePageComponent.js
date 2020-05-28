@@ -6,6 +6,9 @@ import AppleBadge from "../components/AppleBadge";
 import '../styles/HomePageStyle.css';
 import TeamPersonVisualizer from './TeamPersonVisualizer.js';
 import { BrowserView, MobileView } from "react-device-detect"; /* https://www.npmjs.com/package/react-device-detect */
+import FacebookLogo from '../include/Facebook.png';
+import InstaLogo from '../include/Instagram.png';
+import LinkedLogo from '../include/Linkedin.png';
 
 /* Responsible for rendering the view of the homepage
  * uses react-device-detect to provide a more compact 
@@ -29,6 +32,7 @@ function HomePage() {
 						</div>
 					</div>
 				<div className="InfoText">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Z08koGatwLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="promoVid"></iframe>
 					<h1 className="HeaderText"> Know What's In Store </h1>
 					<h2 className="SecondaryText"> Create A Shopping List to Test Us Out </h2>
 					<h3 className="SecondaryText"> *Starting only in Raleigh/Cary </h3>
@@ -72,6 +76,10 @@ function HomePage() {
 					<TeamPersonVisualizer name = "Milen Patel" role = "Engineer, Web-Developement #UNC"/>
 				</div>
 				<BrowserView>
+						<a href="https://www.facebook.com/shelfCheck.io/"><img src={FacebookLogo} alt="FBLogo" className="SocialLogo"/></a>
+						<a href="https://www.instagram.com/shelfcheck.io/"><img src={InstaLogo} alt="IGLogo" className="SocialLogo"/></a>
+						<a href="https://www.linkedin.com/company/shelfcheck/"><img src={LinkedLogo} alt="LILogo" className="SocialLogo"/></a>
+				<a href="https://www.vecteezy.com/free-vector/twitter-icon" style={{textDecoration:'none'}}><p className="policytext">Twitter Icon Vectors by Vecteezy</p></a>
 						<hr width="15%" color="#333333" />
 					<div className="footer">
 						<Link to="/privacy" style={{textDecoration:'none'}}>
