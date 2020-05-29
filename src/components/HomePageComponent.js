@@ -76,10 +76,9 @@ function HomePage() {
 					<TeamPersonVisualizer name = "Milen Patel" role = "Engineer, Web-Developement #UNC"/>
 				</div>
 				<BrowserView>
-						<a href="https://www.facebook.com/shelfCheck.io/"><img src={FacebookLogo} alt="FBLogo" className="SocialLogo"/></a>
 						<a href="https://www.instagram.com/shelfcheck.io/"><img src={InstaLogo} alt="IGLogo" className="SocialLogo"/></a>
-						<a href="https://www.linkedin.com/company/shelfcheck/"><img src={LinkedLogo} alt="LILogo" className="SocialLogo"/></a>
-				<a href="https://www.vecteezy.com/free-vector/twitter-icon" style={{textDecoration:'none'}}><p className="policytext">Twitter Icon Vectors by Vecteezy</p></a>
+						<a href="https://www.facebook.com/shelfCheck.io/"><img src={FacebookLogo} alt="FBLogo" className="SocialLogo"/></a>
+						<a href="https://www.linkedin.com/company/shelfcheck/"><img src={LinkedLogo} alt="LILogo" className="SocialLogoLI"/></a>
 						<hr width="15%" color="#333333" />
 					<div className="footer">
 						<Link to="/privacy" style={{textDecoration:'none'}}>
