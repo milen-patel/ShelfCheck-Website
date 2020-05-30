@@ -1,0 +1,16 @@
+.LoggedInView {
+	margin-left:25%;
+	margin-right:25%;
+	border-style:solid;
+	border-radius:20px;
+}
+
+.storeAddForm {
+	list-style-type:none;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.storeAddForm li {
+	padding-top:5px;
+}

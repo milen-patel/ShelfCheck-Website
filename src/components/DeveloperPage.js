@@ -4,6 +4,7 @@ import keys from '../keys.js';
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import Script from 'react-load-script';
 import { geocodeByAddress, getLatLng } from 'react-google-places-autocomplete';
+import '../styles/DeveloperPageStyles.css';
 
 class DeveloperPage  extends React.Component {
 	constructor(props) {
@@ -52,8 +53,12 @@ class DeveloperPage  extends React.Component {
 			.then(response => response.json())
 			.then(data => {
 				this.setState(prevState => ({
-					pos: "Submitted Store. Add Another",
-					addedStores: prevState.addedStores
+					pos: "Submitted " + prevState.storeName,
+					addedStores: prevState.addedStores+1,
+					storeName: "",
+					storeAddy: "",
+					storeLat: "",
+					storeLon: "",
 				}));
 			});
 	}
@@ -67,7 +72,7 @@ class DeveloperPage  extends React.Component {
 	render() {
 		if (this.state.loggedIn) {
 		    return(
-				<div>
+				<div className="LoggedInView">
 					<h1>Logged In</h1>
 					<p> Heres How This Goes. Search for the Address in the Bar Above, this will autofill the Lat and Lon so you dont have to worry about them. Then type in the store name and address. The address is intentionally not copied over since you are to omit uneeded parts such as the city and state and abbreviate where needed. Then click the submit button. Things work if the status label changed (below the submit button)</p>
 				<hr />
@@ -85,7 +90,7 @@ class DeveloperPage  extends React.Component {
 					)
 				)}
 			/>
-					<form>
+					<form className="storeAddForm">
 						<li>
 							Name:
 							<input type="text" value={this.state.storeName} onChange={this.handleNameChange}/>
