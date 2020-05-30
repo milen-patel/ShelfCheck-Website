@@ -12,7 +12,8 @@
     "react-google-places-autocomplete": "^2.0.4",
     "react-load-script": "0.0.6",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-time": "^4.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
