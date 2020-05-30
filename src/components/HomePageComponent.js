@@ -51,7 +51,7 @@ function HomePage() {
 				</MobileView>
 				<div className="ButtonDiv">
 				<Link to="/search">
-					<button type="button" className="TryButton">Create a List</button>
+					<button type="button" className="TryButton">Try it Out</button>
 				</Link>
 				<div className="AppLinksBar">
 					<a href="https://apps.apple.com/us/app/shelfcheck-shop-smarter/id1514416220">
