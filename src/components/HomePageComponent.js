@@ -34,7 +34,6 @@ function HomePage() {
 				<div className="InfoText">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/Z08koGatwLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="promoVid"></iframe>
 					<h1 className="HeaderText"> Know What's In Store </h1>
-					<h2 className="SecondaryText"> Create A Shopping List to Test Us Out </h2>
 					<h3 className="SecondaryText"> *Starting only in Raleigh/Cary </h3>
 				</div>
 				</BrowserView>
@@ -45,7 +44,6 @@ function HomePage() {
 					</div>
 					<div className="InfoText">
 						<h1 className="MobileHeaderText"> Know What's In Store </h1>
-						<h2 className="MobileSecondaryText"> Create A Shopping List to Test Us Out </h2>
 						<h2 className="MobileSecondaryText"> *Starting only in Raleigh/Cary </h2>
 					</div>
 				</MobileView>

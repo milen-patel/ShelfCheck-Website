@@ -100,15 +100,13 @@ class DeveloperPage  extends React.Component {
 							<input type="text" value={this.state.storeAddy} onChange={this.handleAddyChange}/>
 						</li>
 						<li>
-							Lat:
-							<input type="text" value={this.state.storeLat} onChange={this.handleLatChange}/>
+							Lat: {this.state.storeLat}
 						</li>
 						<li>
-							Lon:
-							<input type="text" value={this.state.storeLon} onChange={this.handleLonChange}/>
+							Lon: {this.state.storeLon}
 						</li>
 						<li>
-							<button type="button" value="xubmit" onClick={this.addstoreFormSubmit}> Submit </button>
+							<button type="button" value="xubmit" onClick={this.addstoreFormSubmit}> Submit (Dont press enter!) </button>
 						</li>
 					</form>
 				<hr style={{width:"40%"}} />
