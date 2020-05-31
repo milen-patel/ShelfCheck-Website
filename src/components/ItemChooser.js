@@ -91,9 +91,11 @@ class ItemChooser  extends React.Component {
 					<li><input type="checkbox" id="Eggs" name="Eggs" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Eggs")} />
 					<label htmlFor="Eggs"> Eggs </label></li>
 					<li><input type="checkbox" id="Bottled Water" name="Bottled Water" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Bottled Water")} />
-					<label htmlFor="Bottled Water"> Water </label></li>
+					<label htmlFor="Bottled Water"> Bottled Water </label></li>
 					<li><input type="checkbox" id="Ground Beef" name="Ground Beef" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Ground Beef")} />
 					<label htmlFor="Ground Beef"> Ground Beef </label></li>
+					<li><input type="checkbox" id="Flour" name="Flour" value="first" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Flour")} />
+					<label htmlFor="Flour"> Flour </label></li>
 				</form>
 			);
 		} else if (this.state.categoryToShow === "health") {
@@ -110,8 +112,6 @@ class ItemChooser  extends React.Component {
 		} else if (this.state.categoryToShow === "cleaning") {
 			return (
 				<form className="itemListForm">
-					<li><input type="checkbox" id="Garbage Bags" name="Garbage Bags" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Garbage Bags")} />
-					<label htmlFor="Garbage Bags"> Garbage Bags </label></li>
 					<li><input type="checkbox" id="Disinfectant Wipes" name="Disenfectant Wipes" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Disinfectant Wipes")} />
 					<label htmlFor="Disinfectant Wipes"> Disinfectant Wipes </label></li>
 					<li><input type="checkbox" id="Hand Sanitizer" name="Hand Sanitizer" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Hand Sanitizer")} />
@@ -120,6 +120,10 @@ class ItemChooser  extends React.Component {
 					<label htmlFor="Hand Soap"> Hand Soap </label></li>
 					<li><input type="checkbox" id="Paper Towels" name="Paper Towels" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Paper Towels")} />
 					<label htmlFor="Paper Towels"> Paper Towels </label></li>
+					<li><input type="checkbox" id="Disinfectant Spray" name="Disinfectant Spray" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Disinfectant Spray")} />
+					<label htmlFor="Disinfectant Spray">Disinfectant Spray</label></li>
+					<li><input type="checkbox" id="Detergent" name="Detergent" value="third" onChange={this.handleIndividualItemSelectChange.bind(this)} checked={this.shouldBeChecked("Detergent")} />
+					<label htmlFor="Detergent"> Detergent </label></li>
 				</form>
 			);
 		} else if (this.state.categoryToShow === "power") {
