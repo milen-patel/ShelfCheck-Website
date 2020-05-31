@@ -92,7 +92,9 @@ class NewHomePage extends React.Component {
               <a href="https://apps.apple.com/us/app/shelfcheck-shop-smarter/id1514416220">
                 <AppleBadge />
               </a>
-              <img src={PlayBadge} alt="Google Play Badge" className="PlayBadge" />
+			  <a href="https://play.google.com/store/apps/details?id=com.shelfcheck.shelfcheck">
+				<img src={PlayBadge} alt="Google Play Badge" className="PlayBadge" />
+              </a>
             </div>
           </div>
 
