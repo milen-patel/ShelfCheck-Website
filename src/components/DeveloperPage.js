@@ -108,7 +108,7 @@ class DeveloperPage  extends React.Component {
 							Lon: {this.state.storeLon}
 						</li>
 						<li>
-							<button type="submit" value="xubmit"> Submit (Dont press enter!) </button>
+							<button type="submit" value="xubmit">Submit</button>
 						</li>
 					</form>
 				<hr style={{width:"40%"}} />
@@ -120,7 +120,7 @@ class DeveloperPage  extends React.Component {
 		    return(
 				<div>
 					<h1>Not Logged In</h1>
-					<p> To Sign in, type the password and click the submit button (do not use the enter key) </p>
+					<p> To Sign in, type the password and click the submit button</p>
 
 					<hr />
 					<form onSubmit={this.loginFormSubmit}>
