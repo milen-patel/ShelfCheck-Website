@@ -28,7 +28,8 @@ class DeveloperPage  extends React.Component {
 		this.addstoreFormSubmit = this.addstoreFormSubmit.bind(this);
 	}
 
-	loginFormSubmit() {
+	loginFormSubmit(event) {
+		event.preventDefault();
 		if (this.state.password === keys["dev-password"]) {
 			this.setState({ loggedIn: true});
 		} else {
@@ -36,7 +37,8 @@ class DeveloperPage  extends React.Component {
 		}
 	}
 
-	addstoreFormSubmit() {
+	addstoreFormSubmit(event) {
+		event.preventDefault();
 		console.log("Attempting to Add Store...");
 		console.log(this.state.storeName);
 		console.log(this.state.storeAddy);
@@ -90,7 +92,7 @@ class DeveloperPage  extends React.Component {
 					)
 				)}
 			/>
-					<form className="storeAddForm">
+					<form className="storeAddForm" onSubmit={this.addstoreFormSubmit}>
 						<li>
 							Name:
 							<input type="text" value={this.state.storeName} onChange={this.handleNameChange}/>
@@ -106,7 +108,7 @@ class DeveloperPage  extends React.Component {
 							Lon: {this.state.storeLon}
 						</li>
 						<li>
-							<button type="button" value="xubmit" onClick={this.addstoreFormSubmit}> Submit (Dont press enter!) </button>
+							<button type="submit" value="xubmit"> Submit (Dont press enter!) </button>
 						</li>
 					</form>
 				<hr style={{width:"40%"}} />
@@ -121,7 +123,7 @@ class DeveloperPage  extends React.Component {
 					<p> To Sign in, type the password and click the submit button (do not use the enter key) </p>
 
 					<hr />
-					<form>
+					<form onSubmit={this.loginFormSubmit}>
 						<label>
 						Password:
 						<input type="text" value={this.state.password} onChange={this.handlePasswordChange}/>
