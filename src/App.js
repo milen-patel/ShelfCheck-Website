@@ -7,7 +7,7 @@ import TermsComponent from './components/TermsComponent.js';
 import ContactPageComponent from './components/ContactPageComponent.js';
 import StoreSearcherComponent from './components/StoreSearcherComponent.js';
 import DeveloperPage from './components/DeveloperPage.js';
-
+import NewHomePage from './components/NewHomePage.js';
 import './styles/AppStyle.css';
 
 class App extends Component {
@@ -61,6 +61,11 @@ class App extends Component {
 				<Route path="/developer" render={props =>
 					<div className="general">
 						<DeveloperPage />
+					</div>
+				} />
+				<Route path="/experimental" render={props =>
+					<div>
+						<NewHomePage />
 					</div>
 				} />
 			</div>

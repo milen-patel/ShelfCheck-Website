@@ -1,0 +1,17 @@
+.explanation {
+	padding-left:50%;
+}
+
+.AppLinksBar {
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5%;
+	padding-bottom: 6%;
+}
+
+.PlayBadge {
+	height: 40px;
+	padding-left: 2%;
+	width: auto;
+}

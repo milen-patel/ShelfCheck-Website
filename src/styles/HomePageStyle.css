@@ -73,20 +73,6 @@
 	font-family: duck;
 }
 
-.AppLinksBar {
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding-top: 5%;
-	padding-bottom: 6%;
-}
-
-.PlayBadge {
-	height: 40px;
-	padding-left: 2%;
-	width: auto;
-}
-
 .t0 {
 	margin-left: auto;
 	padding-right: 10%;
@@ -217,7 +203,7 @@
 
 .TryButton {
 	font-family: duck;
-	background-color: #4524ac;  
+	background-color: #7256f3;  
   	border: none;
   	color: white;
   	text-align: center;
