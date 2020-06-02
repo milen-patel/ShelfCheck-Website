@@ -17,7 +17,7 @@ class App extends Component {
 			<div className="general">
 				<Route path="/" render={props =>
 					<div className="general">
-						<HomePage />
+						<NewHomePage />
 					</div>
 				} exact />
 				<Route path="/search" render={props =>
@@ -63,9 +63,9 @@ class App extends Component {
 						<DeveloperPage />
 					</div>
 				} />
-				<Route path="/experimental" render={props =>
+				<Route path="/old" render={props =>
 					<div>
-						<NewHomePage />
+						<HomePage />
 					</div>
 				} />
 			</div>

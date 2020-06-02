@@ -66,8 +66,7 @@
 	margin-top: 30px;
 	border: none;
 	color: white;
-	height: 40%;
-	width: auto;
+	height: 60%;
 	min-width: 130px;
 	border-radius: 25px;
 	font-family: duck;
@@ -88,8 +87,6 @@
 	height:auto;
 }
 .team {
-	padding-left: 5%;
-	padding-right: 5%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -115,12 +112,13 @@
 .TeamListEntityName {
 	font-family: duck;
 	font-weight: bold;
-	max-width:100%;
+	font-size:1.5em;
+	max-width:100;
 }
 
 .TeamListEntityRole {
 	font-family: duck;
-	font-size: 0.7em;
+	font-size: 0.8em;
 	max-width:15ch;
 	max-height:900px;
 }

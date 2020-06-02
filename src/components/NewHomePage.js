@@ -5,6 +5,11 @@ import Logo from '../include/shelfCheckWhiteLogo.png'
 import PlayBadge from "../include/PlayBadge.png";
 import AppleBadge from "../components/AppleBadge";
 import '../styles/NewHomePageStyle.css';
+import TeamPersonVisualizer from './TeamPersonVisualizer.js';
+import FacebookLogo from '../include/Facebook.png';
+import InstaLogo from '../include/Instagram.png';
+import LinkedLogo from '../include/Linkedin.png';
+
 
 // Little helpers ...
 const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
@@ -12,80 +17,83 @@ const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homep
 class NewHomePage extends React.Component {
   render() {
     return (
-      <Parallax ref={ref => (this.parallax = ref)} pages={3}>
+		<div className="HomePageContainer">
+      <Parallax ref={ref => (this.parallax = ref)} pages={5}>
         <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#805E73' }} />
         <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} />
 
         <ParallaxLayer offset={0} speed={0} factor={3} style={{ backgroundImage: url('stars', true), backgroundSize: 'cover' }} />
 
         <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
-          <img src={url('satellite4')} style={{ width: '15%', marginLeft: '70%' }} />
+          <img src={url('satellite4')} alt="" style={{ width: '15%', marginLeft: '70%' }} />
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
+          <img src={url('cloud')} alt="" style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
+          <img src={url('cloud')} alt="" style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '70%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '40%' }} />
+          <img src={url('cloud')} alt="" style={{ display: 'block', width: '20%', marginLeft: '70%' }} />
+          <img src={url('cloud')} alt="" style={{ display: 'block', width: '20%', marginLeft: '40%' }} />
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.2 }}>
-          <img src={url('cloud')} style={{ display: 'block', width: '10%', marginLeft: '10%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '75%' }} />
+          <img src={url('cloud')} alt="" style={{ display: 'block', width: '10%', marginLeft: '10%' }} />
+          <img src={url('cloud')} alt="" style={{ display: 'block', width: '20%', marginLeft: '75%' }} />
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '60%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '25%', marginLeft: '30%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '10%', marginLeft: '80%' }} />
+          <img src={url('cloud')} alt="" style={{ display: 'block', width: '20%', marginLeft: '60%' }} />
+          <img src={url('cloud')} alt="" style={{ display: 'block', width: '25%', marginLeft: '30%' }} />
+          <img src={url('cloud')} alt="" style={{ display: 'block', width: '10%', marginLeft: '80%' }} />
         </ParallaxLayer>
 
         <ParallaxLayer offset={2.6} speed={0.4} style={{ opacity: 0.6 }}>
-          <img src={url('cloud')} style={{ display: 'block', width: '20%', marginLeft: '5%' }} />
-          <img src={url('cloud')} style={{ display: 'block', width: '15%', marginLeft: '75%' }} />
+          <img src={url('cloud')} alt="" style={{ display: 'block', width: '20%', marginLeft: '5%' }} />
+          <img src={url('cloud')} alt="" style={{ display: 'block', width: '15%', marginLeft: '75%' }} />
         </ParallaxLayer>
 
         <ParallaxLayer offset={2.5} speed={-0.4} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
-          <img src={url('earth')} style={{ width: '60%' }} />
+          <img src={url('earth')} alt="" style={{ width: '60%' }} />
         </ParallaxLayer>
 
-        <ParallaxLayer
-          offset={2}
-          speed={-0.3}
-          style={{
-            backgroundSize: '80%',
-            backgroundPosition: 'center',
-            backgroundImage: url('clients', true)
-          }}
-        />
 
         <ParallaxLayer
           offset={0}
           speed={0.1}
-          // onClick={() => this.parallax.scrollTo(1)}
           style={{ display: 'flex', flexDirection:'column',alignItems: 'center', justifyContent: 'center' }}
 		>
-          <img src={Logo} style={{ width: '50%' }} />
-
-          <div style={{backgroundColor: "#7256f399", padding: "2%", marginTop: "5%", marginLeft: "20%", marginRight: "20%", borderRadius: 25, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-		        <p style={{color:'#fff', fontSize: 22, lineHeight: 1.75, fontWeight: "bold"}}>shelfCheck is a novel data solutions company providing consumer-sourced reports of current store inventories. Inspired by the country-wide shortages of common household goods due to the the COVID-19 pandemic, our founders sought to develop a tool that could make one-stop shopping a reality.  </p>
+          <img src={Logo} alt="" style={{ width: '50%' }} />
+          <div style={{backgroundColor: "", padding: "2%", marginTop: "5%", marginLeft: "20%", marginRight: "20%", borderRadius: 25, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+					<h1 style={{color:"white"}}> Shop Smarter </h1>
           </div>
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={1}
           speed={0.1}
-          // onClick={() => this.parallax.scrollTo(2)}
+          style={{ display: 'flex', flexDirection:'column',alignItems: 'center', justifyContent: 'center' }}
+		>
+          <div style={{backgroundColor: "#7256f399", padding: "2%", marginTop: "5%", marginLeft: "20%", marginRight: "20%", borderRadius: 25, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+					<h1 style={{color:"white"}}> What We Do </h1>
+					<hr style={{width:"40%"}} />
+		        <p style={{color:'#fff', fontSize: 22, lineHeight: 1.75, fontWeight: "bold"}}>shelfCheck is a novel data solutions company providing consumer-sourced reports of current store inventories. Inspired by the country-wide shortages of common household goods due to the the COVID-19 pandemic, our founders sought to develop a tool that could make one-stop shopping a reality.  </p>
+					<iframe width="560" height="315" style={{borderRadius:"15px"}} src="https://www.youtube.com/embed/Z08koGatwLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="promoVid"></iframe>
+
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={2}
+          speed={0.1}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           
           <div style={{backgroundColor: "#68ADEB", width: "40%", height: "40%", borderRadius: 35, display: 'flex', flexDirection: "column", justifyContent: 'space-around'}}>
-            <p style={{fontSize: 30, padding: "5%", color: "white"}}>Create a shopping list to test us out</p>
+            <p style={{fontSize: 30, padding: "5%", color: "white"}}>Dont Believe Us? Try it Yourself</p>
 
             <Link to="/search">
-              <button type="button" className="TryButton">Create a List</button>
+              <button type="button" className="TryButton">Search Online</button>
             </Link>
 
             <div className="AppLinksBar">
@@ -101,13 +109,56 @@ class NewHomePage extends React.Component {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={2}
+          offset={3}
+          speed={0}
+          style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+          onClick={() => this.parallax.scrollTo(0)}>
+				<div className="teamHolder">
+				<h1> Meet The Team </h1>
+				<div className="team">
+					<TeamPersonVisualizer name = "Anthony Guzzo" role = "Design, Product #Rice"/>
+					<TeamPersonVisualizer name = "Rohit Jain" role = "Growth, Product #Duke"/>
+					<TeamPersonVisualizer name = "Viraj Shah" role = "Growth, Business #UNC"/>
+					<TeamPersonVisualizer name = "James Taylor" role = "Engineer, Backend and Mobile #Duke"/>
+					<TeamPersonVisualizer name = "Milen Patel" role = "Engineer, Web-Developement #UNC"/>
+				</div>
+				</div>
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={4}
           speed={-0}
           style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           onClick={() => this.parallax.scrollTo(0)}>
-          <img src={url('clients-main')} style={{ width: '40%' }} />
+				<div className="SocialDiv">
+				<h1> Follow Our Journey </h1>
+				<div className="SocialIcons">
+					<a href="https://www.instagram.com/shelfcheck.io/"><img src={InstaLogo} alt="IGLogo" className="SocialLogo"/></a>
+					<a href="https://www.facebook.com/shelfCheck.io/"><img src={FacebookLogo} alt="FBLogo" className="SocialLogo"/></a>
+					<a href="https://www.linkedin.com/company/shelfcheck/"><img src={LinkedLogo} alt="LILogo" className="SocialLogoLI"/></a>
+				</div>
+				<hr style={{width:"40%", color:"black"}} />
+
+				<div className="FooterButtons">
+				<a href="mailto:contact.shelfcheck@gmail.com">
+					<button type="button" className="ContactButton"> Contact Us</button>
+				</a>
+				<Link to="/coffee">
+					<button type="button" className="ContactButton"> Buy A Coffee</button>
+				</Link>
+				</div>
+
+				<div className="footer">
+					<Link to="/privacy" style={{textDecoration:'none'}}>
+						<p className="policytext">Privacy Policy</p>
+					</Link>
+					<Link to="/terms" style={{textDecoration:'none'}}>
+						<p className="policytext">Terms and Conditions</p>
+					</Link>
+				</div>
+				</div>
         </ParallaxLayer>
       </Parallax>
+   </div>
     )
   }
 }

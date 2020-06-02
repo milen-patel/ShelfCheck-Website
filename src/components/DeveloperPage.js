@@ -86,6 +86,7 @@ class DeveloperPage  extends React.Component {
 					.then(results => getLatLng(results[0]))
 					.then(({ lat, lng }) =>
 						(
+							// eslint-disable-next-line
 							this.handleLonChange(lng),
 							this.handleLatChange(lat)
 						)
