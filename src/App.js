@@ -17,7 +17,16 @@ class App extends Component {
 			<div className="general">
 				<Route path="/" render={props =>
 					<div className="general">
-						<NewHomePage />
+						<MobileView>
+							<div className="general">
+								<HomePage />
+							</div>
+						</MobileView>
+						<BrowserView>
+							<div className="general">
+								<NewHomePage />
+							</div>
+						</BrowserView>
 					</div>
 				} exact />
 				<Route path="/search" render={props =>
