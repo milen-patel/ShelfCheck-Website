@@ -12,52 +12,54 @@ function PolicyComponent(props) {
 		return (
 		  <div class='terms'>
 			<h1>PRIVACY NOTICE</h1>
-			<h2> Last updated May 30, 2020 </h2>
+<p>Last updated May 28, 2020</p>
 
 
 
-<p> Thank you for choosing to be part of our community at shelfCheck LLC, doing business as shelfCheck (“shelfCheck”, “we”, “us”, or “our”). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our notice, or our practices with regards to your personal information, please contact us at contact.shelfcheck@gmail.com. </p>
+<p>Thank you for choosing to be part of our community at shelfCheck LLC, doing business as shelfCheck (“shelfCheck”, “we”, “us”, or “our”). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about our notice, or our practices with regards to your personal information, please contact us at contact.shelfcheck@gmail.com.</p>
 
-<p>When you visit our website http://shelfcheck.io, mobile application, and use our services, you trust us with your personal information. We take your privacy very seriously. In this privacy notice, we seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy notice that you do not agree with, please discontinue use of our Sites or Apps and our services.</p>
+<p>When you visit our website https://shelfcheck.io, mobile application, and use our services, you trust us with your personal information. We take your privacy very seriously. In this privacy notice, we seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy notice that you do not agree with, please discontinue use of our Sites or Apps and our services.</p>
 
-<p> This privacy notice applies to all information collected through our website (such as http://shelfcheck.io), mobile application, ("Apps"), and/or any related services, sales, marketing or events (we refer to them collectively in this privacy notice as the "Services").</p>
+<p>This privacy notice applies to all information collected through our website (such as https://shelfcheck.io), mobile application, ("Apps"), and/or any related services, sales, marketing or events (we refer to them collectively in this privacy notice as the "Services").</p>
 
-<p> Please read this privacy notice carefully as it will help you make informed decisions about sharing your personal information with us. </p>
-
-
-
-<h1> TABLE OF CONTENTS </h1>
-
-<p><b>1. WHAT INFORMATION DO WE COLLECT?</b></p>
-
-<p><b>2. HOW DO WE USE YOUR INFORMATION?</b></p>
-
-<p><b>3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</b></p>
-
-<p><b>4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</b></p>
-
-<p><b>5. DO WE USE GOOGLE MAPS?</b></p>
-
-<p><b>6. HOW LONG DO WE KEEP YOUR INFORMATION?</b></p>
-
-<p><b>7. DO WE COLLECT INFORMATION FROM MINORS?</b></p>
-
-<p><b>8. WHAT ARE YOUR PRIVACY RIGHTS?</b></p>
-
-<p><b>9. CONTROLS FOR DO-NOT-TRACK FEATURES</b></p>
-
-<p><b>10. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</b></p>
-
-<p><b>11. DO WE MAKE UPDATES TO THIS POLICY?</b></p>
-
-<p><b>12. HOW CAN YOU CONTACT US ABOUT THIS POLICY?</b></p>
+<p>Please read this privacy notice carefully as it will help you make informed decisions about sharing your personal information with us.</p>
 
 
 
-<p><b>1. WHAT INFORMATION DO WE COLLECT?</b></p>
+<h1>TABLE OF CONTENTS</h1>
+
+<p>1. WHAT INFORMATION DO WE COLLECT?</p>
+
+<p>2. HOW DO WE USE YOUR INFORMATION?</p>
+
+<p>3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</p>
+
+<p>4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</p>
+
+<p>5. DO WE USE GOOGLE MAPS?</p>
+
+<p>6. HOW LONG DO WE KEEP YOUR INFORMATION?</p>
+
+<p>7. HOW DO WE KEEP YOUR INFORMATION SAFE?</p>
+
+<p>8. DO WE COLLECT INFORMATION FROM MINORS?</p>
+
+<p>9. WHAT ARE YOUR PRIVACY RIGHTS?</p>
+
+<p>10. CONTROLS FOR DO-NOT-TRACK FEATURES</p>
+
+<p>11. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</p>
+
+<p>12. DO WE MAKE UPDATES TO THIS POLICY?</p>
+
+<p>13. HOW CAN YOU CONTACT US ABOUT THIS POLICY?</p>
 
 
-<p>Information automatically collected</p>
+
+<h1>1. WHAT INFORMATION DO WE COLLECT?</h1>
+
+
+<h1>Information automatically collected</h1>
 
 <p>In Short: Some information — such as IP address and/or browser and device characteristics — is collected automatically when you visit our Services or Apps.</p>
 
@@ -66,7 +68,7 @@ function PolicyComponent(props) {
 <p>Like many businesses, we also collect information through cookies and similar technologies.</p>
 
 
-<p>Information collected through our Apps</p>
+<h1>Information collected through our Apps</h1>
 
 <p>In Short: We may collect information regarding your geo-location, mobile device, when you use our apps.</p>
 
@@ -76,7 +78,7 @@ function PolicyComponent(props) {
 <p>Mobile Device Data. We may automatically collect device information (such as your mobile device ID, model and manufacturer), operating system, version information and IP address.</p>
 
 
-<p><b>2. HOW DO WE USE YOUR INFORMATION?</b></p>
+<h1>2. HOW DO WE USE YOUR INFORMATION?</h1>
 
 <p>In Short: We process your information for purposes based on legitimate business interests, the fulfillment of our contract with you, compliance with our legal obligations, and/or your consent.</p>
 
@@ -84,13 +86,12 @@ function PolicyComponent(props) {
 
 <p>We use the information we collect or receive:</p>
 
-
-<p>To protect our Services. We may use your information as part of our efforts to keep our Services or Apps safe and secure (for example, for fraud monitoring and prevention).</p>
+<p>To deliver services to the user. We may use your information to provide you with the requested service.</p>
 
 <p>For other Business Purposes. We may use your information for other Business Purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Services or Apps, products, marketing and your experience. We may use and store this information in aggregated and anonymized form so that it is not associated with individual end users and does not include personal information. We will not use identifiable personal information without your consent.</p>
 
 
-<p><b>3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</b></p>
+<h1>3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</h1>
 
 <p>In Short: We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations.</p>
 
@@ -113,14 +114,14 @@ function PolicyComponent(props) {
 <p>Third-Party Advertisers. We may use third-party advertising companies to serve ads when you visit the Services or Apps. These companies may use information about your visits to our Website(s) and other websites that are contained in web cookies and other tracking technologies in order to provide advertisements about goods and services of interest to you.</p>
 
 
-<p><b>4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</b></p>
-In Short: We may use cookies and other tracking technologies to collect and store your information.
+<h1>4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</h1>
+<p>In Short: We may use cookies and other tracking technologies to collect and store your information.</p>
 
 <p>We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Policy.</p>
 
 
 
-<p><b>5. DO WE USE GOOGLE MAPS?</b></p>
+<h1>5. DO WE USE GOOGLE MAPS?</h1>
 
 <p>In Short: Yes, we use Google Maps for the purpose of providing better service.</p>
 
@@ -130,7 +131,7 @@ In Short: We may use cookies and other tracking technologies to collect and stor
 
 
 
-<p><b>6. HOW LONG DO WE KEEP YOUR INFORMATION?</b></p>
+<h1>6. HOW LONG DO WE KEEP YOUR INFORMATION?</h1>
 
 <p>In Short: We keep your information for as long as necessary to fulfill the purposes outlined in this privacy notice unless otherwise required by law.</p>
 
@@ -139,8 +140,15 @@ In Short: We may use cookies and other tracking technologies to collect and stor
 <p>When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize it, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.</p>
 
 
+<h1>7. HOW DO WE KEEP YOUR INFORMATION SAFE?</h1>
 
-<p><b>7. DO WE COLLECT INFORMATION FROM MINORS?</b></p>
+<p>In Short: We aim to protect your personal information through a system of organizational and technical security measures.</p>
+
+<p>We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, please also remember that we cannot guarantee that the internet itself is 100% secure. Although we will do our best to protect your personal information, transmission of personal information to and from our Services or Apps is at your own risk. You should only access the services within a secure environment.</p>
+
+
+
+<h1>8. DO WE COLLECT INFORMATION FROM MINORS?</h1>
 
 <p>In Short: We do not knowingly collect data from or market to children under 18 years of age.</p>
 
@@ -148,7 +156,7 @@ In Short: We may use cookies and other tracking technologies to collect and stor
 
 
 
-<p><b>8. WHAT ARE YOUR PRIVACY RIGHTS?</b></p>
+<h1>9. WHAT ARE YOUR PRIVACY RIGHTS?</h1>
 
 <p>In Short: You may review, change, or terminate your account at any time.</p>
 
@@ -156,13 +164,13 @@ In Short: We may use cookies and other tracking technologies to collect and stor
 
 
 
-<p><b>9. CONTROLS FOR DO-NOT-TRACK FEATURES</b></p>
+<h1>10. CONTROLS FOR DO-NOT-TRACK FEATURES</h1>
 
 <p>Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track (“DNT”) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. No uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.</p>
 
 
 
-<p><b>10. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</b></p>
+<h1>11. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</h1>
 
 <p>In Short: Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.</p>
 
@@ -172,7 +180,7 @@ In Short: We may use cookies and other tracking technologies to collect and stor
 
 
 
-<p><b>11. DO WE MAKE UPDATES TO THIS POLICY?</b></p>
+<h1>12. DO WE MAKE UPDATES TO THIS POLICY?</h1>
 
 <p>In Short: Yes, we will update this policy as necessary to stay compliant with relevant laws.</p>
 
@@ -180,17 +188,17 @@ In Short: We may use cookies and other tracking technologies to collect and stor
 
 
 
-<p><b>12. HOW CAN YOU CONTACT US ABOUT THIS POLICY?</b></p>
+<h1>13. HOW CAN YOU CONTACT US ABOUT THIS POLICY?</h1>
 
 <p>If you have questions or comments about this policy, you may email us at contact.shelfcheck@gmail.com or by post to:</p>
 
-<p><b>shelfCheck LLC</b></p>
-__________
-__________
-United States
+<h1>shelfCheck LLC</h1>
+<p>__________</p>
+<p>__________</p>
+<p>United States</p>
 
 
-<p><b>HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</b></p>
+<h1>HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h1>
 
 <p>Based on the laws of some countries, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please submit a request form by clicking here. We will respond to your request within 30 days.</p>
 <p>This privacy policy was created using Termly’s Privacy Policy Generator.</p>

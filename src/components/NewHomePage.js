@@ -19,7 +19,7 @@ class NewHomePage extends React.Component {
     return (
 		<div className="HomePageContainer">
       <Parallax ref={ref => (this.parallax = ref)} pages={5}>
-        <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#805E73' }} />
+        <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#4CD6DE' }} />
         <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} />
 
         <ParallaxLayer offset={0} speed={0} factor={3} style={{ backgroundImage: url('stars', true), backgroundSize: 'cover' }} />
@@ -78,7 +78,7 @@ class NewHomePage extends React.Component {
           <div style={{backgroundColor: "#7256f399", padding: "2%", marginTop: "5%", marginLeft: "20%", marginRight: "20%", borderRadius: 25, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
 					<h1 style={{color:"white"}}> What We Do </h1>
 					<hr style={{width:"40%"}} />
-		        <p style={{color:'#fff', fontSize: 22, lineHeight: 1.75, fontWeight: "bold"}}>shelfCheck is a novel data solutions company providing consumer-sourced reports of current store inventories. Inspired by the country-wide shortages of common household goods due to the the COVID-19 pandemic, our founders sought to develop a tool that could make one-stop shopping a reality.  </p>
+		        <p style={{color:'#fff', fontSize: 22, lineHeight: 1.75, fontWeight: "bold"}}>shelfCheck is a novel data solutions company providing consumer-sourced reports of current store inventories. Inspired by the country-wide shortages of common household goods due to the the COVID-19 pandemic, our team set out to make one-stop shopping a reality. </p>
 					<iframe width="560" height="315" style={{borderRadius:"15px"}} src="https://www.youtube.com/embed/Z08koGatwLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="promoVid"></iframe>
 
           </div>
