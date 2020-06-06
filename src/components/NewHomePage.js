@@ -9,6 +9,8 @@ import TeamPersonVisualizer from './TeamPersonVisualizer.js';
 import FacebookLogo from '../include/Facebook.png';
 import InstaLogo from '../include/Instagram.png';
 import LinkedLogo from '../include/Linkedin.png';
+import Earth from '../include/Earth.png'
+import DownArrowGif from '../include/DownArrow.gif'
 
 
 // Little helpers ...
@@ -23,10 +25,10 @@ class NewHomePage extends React.Component {
         <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} />
 
         <ParallaxLayer offset={0} speed={0} factor={3} style={{ backgroundImage: url('stars', true), backgroundSize: 'cover' }} />
-
-        <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
-          <img src={url('satellite4')} alt="" style={{ width: '15%', marginLeft: '70%' }} />
+        <ParallaxLayer offset={0.35} speed={0.1} style={{ width:'100%', display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
+          <img src={DownArrowGif} alt="" style={{ width: '25%'}} />
         </ParallaxLayer>
+
 
         <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
           <img src={url('cloud')} alt="" style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
@@ -54,8 +56,8 @@ class NewHomePage extends React.Component {
           <img src={url('cloud')} alt="" style={{ display: 'block', width: '15%', marginLeft: '75%' }} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2.5} speed={-0.4} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
-          <img src={url('earth')} alt="" style={{ width: '60%' }} />
+        <ParallaxLayer offset={1.8} speed={-0.2} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
+          <img src={Earth} alt="" style={{ width: '60%' }} />
         </ParallaxLayer>
 
 
@@ -72,7 +74,7 @@ class NewHomePage extends React.Component {
 
         <ParallaxLayer
           offset={1}
-          speed={0.1}
+          speed={1.0}
           style={{ display: 'flex', flexDirection:'column',alignItems: 'center', justifyContent: 'center' }}
 		>
           <div style={{backgroundColor: "#7256f399", padding: "2%", marginTop: "5%", marginLeft: "20%", marginRight: "20%", borderRadius: 25, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
@@ -139,7 +141,7 @@ class NewHomePage extends React.Component {
 				<hr style={{width:"40%", color:"black"}} />
 
 				<div className="FooterButtons">
-				<a href="mailto:contact.shelfcheck@gmail.com">
+				<a href="mailto:contact@shelfcheck.io">
 					<button type="button" className="ContactButton"> Contact Us</button>
 				</a>
 				<Link to="/coffee">
