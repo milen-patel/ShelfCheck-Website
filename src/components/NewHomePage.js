@@ -10,7 +10,6 @@ import FacebookLogo from '../include/Facebook.png';
 import InstaLogo from '../include/Instagram.png';
 import LinkedLogo from '../include/Linkedin.png';
 import Earth from '../include/Earth.png'
-import DownArrowGif from '../include/DownArrow.gif'
 
 
 // Little helpers ...
@@ -26,7 +25,6 @@ class NewHomePage extends React.Component {
 
         <ParallaxLayer offset={0} speed={0} factor={3} style={{ backgroundImage: url('stars', true), backgroundSize: 'cover' }} />
         <ParallaxLayer offset={0.35} speed={0.1} style={{ width:'100%', display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
-          <img src={DownArrowGif} alt="" style={{ width: '25%'}} />
         </ParallaxLayer>
 
 
