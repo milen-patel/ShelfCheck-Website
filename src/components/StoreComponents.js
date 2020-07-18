@@ -7,9 +7,8 @@ import Navigate from '../include/Navigate.png';
  * props.name -> Name of the store
  * proprs.addy -> Address of the store
  * props.distance -> Distance from store to user 
- *
- * props.stock_proportion
- * props.items
+ * props.stock_proportion -> Proportion of items of the user's list that are in stock
+ * props.items -> Contains the quantity and time of last report for each item at a store
  *
  * StoreComponent will round estimated quantity to the nearest integer
  * StoreComponent will round distance to exactly two decimal places
@@ -17,33 +16,33 @@ import Navigate from '../include/Navigate.png';
 function StoreComponent(props) {
 	return (
 		<div className='primary'>
-		<div className="inner">
-		<h1><b> {props.name}</b></h1>
-		<a href={generateMapsURL(props.latitude,props.longitude)}>
-			<img src={Navigate} alt="Navigate" className="NavigateButton"/>
-		</a>
-		</div>
-
-		<div>
-		<p>{props.addy}</p>
-		<p> Contains {Math.round(props.stock_proportion*100)}% of your list. </p>
-		<p><b>Distance:</b> {Math.round((Number.EPSILON + props.distance) * 100)/100} Miles</p>
-		<p> Takes {Math.round(props.commuteTime/60)} minutes to commute here. </p>
-		<p> Buy the following items: </p>
-		{props.items.map(convertRawToElement)}
-		</div>
+			<div className="inner">
+				<h1><b> {props.name}</b></h1>
+				<a href={generateMapsURL(props.latitude,props.longitude)}>
+					<img src={Navigate} alt="Navigate" className="NavigateButton"/>
+				</a>
+			</div>
+			<div>
+				<p>{props.addy}</p>
+				<p> Contains {Math.round(props.stock_proportion*100)}% of your list. </p>
+				<p><b>Distance:</b> {Math.round((Number.EPSILON + props.distance) * 100)/100} Miles</p>
+				<p> Takes {Math.round(props.commuteTime/60)} minutes to commute here. </p>
+				<p> Buy the following items: </p>
+				{props.items.map(convertRawToElement)}
+			</div>
 		</div>
 	)
 }
 
+/* Returns a URL to the google maps location of (lat, lon) */
 function generateMapsURL(lat, lon) {
 	return "https://www.google.com/maps/search/?api=1&query=" + lon + "," + lat
 }
 
 function convertRawToElement(currentItem) {
-return (
-	<p> <b>{currentItem.item_name}</b> Estimated {Math.round(currentItem.quantity)} units in stock as of {Math.round(currentItem.recency)} minutes ago. </p>
-)
+	return (
+		<p> <b>{currentItem.item_name}</b> Estimated {Math.round(currentItem.quantity)} units in stock as of {Math.round(currentItem.recency)} minutes ago. </p>
+	)
 }
 
 export default StoreComponent;
