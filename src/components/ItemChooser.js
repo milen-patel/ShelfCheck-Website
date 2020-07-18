@@ -35,16 +35,40 @@ class ItemChooser  extends React.Component {
 	 */
 	handleIndividualItemSelectChange(e) {
 		var iName = e.target.id;
-		if (this.state.itemsSelected.includes(iName)) {
-			return;
-		} else {
+
+		/* If the item is unselected, then add it to state */
+		if (!this.state.itemsSelected.includes(iName)) {
+			var curr = this.state.itemsSelected;
+			curr.push(iName);
 			this.setState(
-				{itemsSelected: Array(iName)}
+				{itemsSelected: curr}
 			);
+			return;
+		}
+
+		/* If we have the current item selected, but it is the only one, do nothing */
+		if (this.state.itemsSelected.includes(iName)) {
+			if (this.state.itemsSelected.length === 1) {
+				return;
+			}
+
+			/* Otherwise, remove it from the list */
+			var currState = this.state.itemsSelected;
+			var targetIndex = currState.indexOf(iName);
+			if (targetIndex !== -1) {
+				currState.splice(targetIndex, 1);
+			}
+
+			/* Update state */
+			this.setState(
+				{itemsSelected: currState}
+			);
+			return;
 		}
 	}
 	
 	componentDidUpdate(prevProps, prevState) {
+		console.log("Item Chooser Update: " + this.state.itemsSelected);
 		this.props.notifyFunction(this.state.itemsSelected);
 	}
 

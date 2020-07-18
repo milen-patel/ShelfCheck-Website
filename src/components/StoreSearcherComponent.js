@@ -11,9 +11,14 @@ class StoreSearcherComponent extends Component {
 	constructor(props) {
 		super();
 		this.state = {
-			todos: [],
+			todos: {
+				found_proportion: 0, 
+				stores: Array(1),
+				not_found_items: Array(1),
+				total_time: 0,
+			},
 			isLoading: false,
-			queryItem: "Bread",
+			queryItem: ["Bread"],
 			queryLat: 0.0,
 			queryLon: 0.0,
 		}
@@ -41,7 +46,23 @@ class StoreSearcherComponent extends Component {
 			);
 		}
 
-		if ((this.state.todos  === "none") || (this.state.todos.length  === 0) || (this.state.todos.includes("no stores nearby"))) {
+		if (this.state.queryLat === 0) {
+			return (
+				<div className="StoreSearcher">
+					<img src={Logo} alt="Logo" className="Logo"/>
+					<div className="ButtonHolder">
+						<Link to="/">
+							<button type="button" className="BackButton">Back Home</button>
+						</Link>
+					</div>
+					<ItemChooser notifyFunction={this.itemListChangeRequested}/>
+					<AddressSearchComponent onClick={this.addressChangeRequested} />
+					<p> Please Enter an Address </p>	
+				</div>
+			)
+		}
+
+		if (this.state.todos.found_proportion === 0) {
 			return (
 				<div className="StoreSearcher">
 					<img src={Logo} alt="Logo" className="Logo"/>
@@ -57,7 +78,31 @@ class StoreSearcherComponent extends Component {
 			)
 		}
 
-		const parsedData = Array.from(this.state.todos).map(this.convertRawToElement)
+		const parsedData = this.state.todos.stores.map(this.convertRawToElement)
+		var foundStatement;
+		if (this.state.todos.found_proportion === 1) {
+			foundStatement = "We were able to find all of your items!";
+		} else {
+			foundStatement = "We were able to find " + Math.round(this.state.todos.found_proportion*100) + "% of your items. shelfCheck does not currently have inventory on: ";
+			var i;
+			for (i = 0; i < this.state.todos.not_found_items.length; i++) {
+				foundStatement += this.state.todos.not_found_items[i];
+				
+				if (i !== this.state.todos.not_found_items.length - 1) {
+					foundStatement += ", ";
+				} else {
+					foundStatement += ".";
+				}
+			}
+		}
+
+		var tripTimeStatement;
+		if (this.state.todos.total_time !== 0) {
+			tripTimeStatement = "The total trip will take " + Math.round(this.state.todos.total_time/60) + " minutes using the route below";
+		} else {
+			tripTimeStatement = "";
+		}
+
 		return (
 			<div className="StoreSearcher">
 				<img src={Logo} alt="Logo" className="Logo"/>
@@ -68,6 +113,8 @@ class StoreSearcherComponent extends Component {
 				</div>
 				<ItemChooser notifyFunction={this.itemListChangeRequested}/>
 				<AddressSearchComponent onClick={this.addressChangeRequested}/>
+				<p>{foundStatement}</p>
+				<p>{tripTimeStatement}</p>
 				{parsedData}
 			</div>
 		)
@@ -75,7 +122,19 @@ class StoreSearcherComponent extends Component {
 
 	conductSearch() {
 		this.setState({isLoading:true})
-		fetch('https://graphimmunity.xyz/https://api.shelfcheck.io/v1/get-closest-stores-single-item', { 
+		var parsedItemString = '[';
+		var i;
+		for (i = 0; i < this.state.queryItem.length; i++) {
+			parsedItemString += '"';
+			parsedItemString += this.state.queryItem[i];
+			parsedItemString += '"'
+			if (i !== this.state.queryItem.length-1) {
+				parsedItemString += ','
+			}
+		}
+		parsedItemString += ']';
+		console.log('{ "curr_longitude":' + this.state.queryLon + ', "curr_latitude": ' + this.state.queryLat  +', "home_longitude": '+this.state.queryLon+', "home_latitude": '+this.state.queryLat +', "items": ' + parsedItemString  + ' }' )
+		fetch('https://graphimmunity.xyz/https://api.shelfcheck.io/v1/greedy-shopper', { 
 			method: 'POST', 
 			headers: new Headers({
 				'x-api-key': keys["single-item-search"], 
@@ -84,10 +143,11 @@ class StoreSearcherComponent extends Component {
 				'Access-Control-Allow-Methods': 'POST',
 				'Access-Control-Allow-Credential': 'true'
 			}),
-		 body: '{ "longitude":' + this.state.queryLon + ', "latitude": ' + this.state.queryLat  + ', "item_name": "' + this.state.queryItem  + '" }' 
+			body: '{ "curr_longitude":' + this.state.queryLon + ', "curr_latitude": ' + this.state.queryLat  +', "home_longitude": '+this.state.queryLon+', "home_latitude": '+this.state.queryLat +', "items": ' + parsedItemString  + ' }' 
 		})
 			.then(response => response.json())
 			.then(data => {
+				console.log(data);
 				this.setState({
 					isLoading: false,
 					todos: data,
@@ -102,8 +162,10 @@ class StoreSearcherComponent extends Component {
 			addy={currentItem.address} 
 			latitude={currentItem.coordinates[0]} 
 			longitude = {currentItem.coordinates[1]} 
-			quantity={currentItem.approximate_quantity} 
+			stock_proportion = {currentItem.stock_proportion}
+		    items = {currentItem.approximate_quantities}
 			distance={currentItem.distance} 
+			commuteTime = {this.state.todos.stop_times[this.state.todos.stores.indexOf(currentItem)]}
 		/>
 	)
 	}
@@ -121,12 +183,18 @@ class StoreSearcherComponent extends Component {
 	}
 
 	itemListChangeRequested(newList) {
-		if (newList[0] !== this.state.queryItem) {
+		if (this.state.queryLat === 0) {
+			return;
+		}
+		console.log("Current State: " + this.state.queryItem)
+		console.log("Requested State: " + newList)
+		if (newList.length !== this.state.queryItem.length) {
+			console.log("conditions met");
 			this.setState(
 				{
-					queryItem: newList[0],
+					queryItem: newList.slice(0),
 				}, () => this.conductSearch())
-		}
+		} 
 	}
 }
 
